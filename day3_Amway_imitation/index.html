@@ -77,19 +77,42 @@
             margin: 0 auto;
         }
 
+        dl {
+            width: 300px;
+            height: 180px;
+            float:left;
+            background-color: wheat;
+            margin:10px 50px;
+        }
+
     </style>
 </head>
 <body>
-   <!--第一块--> 
+   <!--第一块-->
    <div class="header"><div class="main">Header</div></div>
-   <!--第二块--> 
+   <!--第二块-->
    <div class="dropdown"><div class="main">Dropdown</div></div>
    <!--第三块--> 
    <div class="featured"><div class="main">Featured</div></div>
    <!--第四块--> 
    <div class="focus"><div class="main">Focus</div></div>
    <!--第五块--> 
-   <div class="article"><div class="main">Article</div></div>
+   <div class="article">
+       <div class="main">
+            <dl>
+                <dt>Article 1</dt>
+                <dd>Something about Article 1</dd>
+            </dl>
+            <dl>
+                <dt>Article 2</dt>
+                <dd>Something about Article 2</dd>
+            </dl>
+            <dl>
+                <dt>Article 3</dt>
+                <dd>Something about Article 3</dd>
+            </dl>
+        </div>
+    </div>
    <!--第六块--> 
    <div class="footer"><div class="main">Footer</div></div>
 </body>
