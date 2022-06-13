@@ -9,6 +9,7 @@
         * {
             padding: 0;
             margin: 0;
+            font-family: "微软雅黑";
         }
         /*top: 1520*38*/
         /*top main: 1200*38 */
@@ -24,7 +25,7 @@
         }
         .top-left {
             float: left;
-            margin-top: 5px;
+           line-height: 38px; 
             font-size: 12px;
         }
         .top-left p {
@@ -67,23 +68,25 @@
             margin-top: 30px;
         }
 
-        /*category: 1520*50*/
-        /*category main: 1200*50*/
-        .category {
+        /*nav: 1520*50*/
+        /*nav main: 1200*50*/
+        .nav {
             width: 1520px;
             height: 50px;
             background-color: #008dd5;
         }
-        .category .main {
+        .nav .main {
             width: 1200px;
             height: 50px;
             margin: 0 auto;
         }
-        .category .main li {
+        .nav .main li {
             float: left;
-            margin: 10px 20px;
+            /* margin: 10px 20px; */
+            line-height: 50px;
+            margin-left: 40px;
         }
-        .category .main a {
+        .nav .main a {
             text-decoration: none;
             color: white;
             font-size: 16px;
@@ -108,6 +111,7 @@
         }
         .course dl {
             float: left;
+            text-align: center;
             margin-left: 80px;
             margin-top: 20px;
         }
@@ -214,6 +218,10 @@
 
         }
 
+        .list dt {
+            text-align: center;
+        }
+
         .list dd {
             font-size: 14px;;
             color: #909790
@@ -223,8 +231,29 @@
         .footer {
             width: 1520px;
             height: 125px;
-            background-color: #111b24
+            background-color: #111b24;
+            color: #8d9995;
+            line-height: 25px;
+            font-size: 12px;
         }
+
+        .footer-left {
+            width: 750px;
+            float: left;
+            margin-top: 25px;
+        }
+        .footer-right {
+            width: 750px;
+            float: right;
+            margin-top: 25px;
+        }
+        .footer-left p {
+            text-align: right;
+        }
+        .footer-right p {
+            text-align: left;
+        }
+
 
     </style>
 </head>
@@ -241,7 +270,7 @@
             <div class="banner-right"><img src="images/cali.jpg" alt=""></div>
         </div>
     </div>
-    <div class="category">
+    <div class="nav">
     <div class="main">
         <ul type="none">
             <li><a href="#">首页</a></li> 
@@ -345,6 +374,15 @@
             </div>
         </div>
     </div>
-    <div class="footer"></div>
+    <div class="footer">
+        <div class="footer-left">
+            <p>北京千锋互联网科技有限公司版权所有</p>
+            <p>京ICP备12003911号-6</p>
+        </div>
+        <div class="footer-right">
+            <p>北京市海淀区宝盛北里西区28号天丰利商场4层</p>
+            <p>Copyright &copy; 2013 - 2019</p>
+        </div>
+    </div>
 </body>
 </html>
