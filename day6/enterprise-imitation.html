@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TREVISO</title>
+    <style>
+
+          * {
+               padding: 0;
+               margin: 0;
+          }
+        .header,.nav,.featured,.info,.project,.product,.footer {
+            width: 1346px;
+        }
+
+        .main {
+            width: 1100px;
+            margin: 0 auto;
+        }
+
+        .header {
+            height: 100px;
+            /* background-color: #000; */
+        }
+
+        #logo {
+               margin-top: 30px;
+        }
+
+        .header form {
+          width: 234px;
+          height: 26px;
+
+          float: right;
+          border: solid 2px #e5e5e5;
+          background-color: #f1f1f1;
+          margin-top: 30px;
+        }
+        .header form input {
+          width: 210px;
+          height: 26px;
+          background-color: transparent;
+
+          border:0;
+          outline: none;
+          float: left;
+        }
+        .header form button {
+          border: 0;
+          height: 26px;
+        }
+
+        .nav {
+          background-color: #2c2c2c;
+          height: 58px; /*important*/
+        }
+        .nav li {
+          line-height: 58px;
+          border-right: dotted 1px #4a4a4a;
+          float: left;
+          padding-left: 32px;
+          padding-right: 32px;
+        }
+        .nav a {
+          color: white;
+          text-decoration: none;
+
+        }
+        .nav .right {
+          border-right: none;
+        }
+    
+        .featured {
+          height: 465px;
+          background-image: url(images/qy/featured.jpg);
+        }
+
+        .info {
+          height: 269px;
+        }
+
+        .info .news {
+          width: 480px;
+          height: 269px;
+          float: left;
+        }
+        .info .news h3 {
+          line-height: 86px;
+          font-weight: normal;
+        }
+        a {
+          color: black;
+          text-decoration: none;
+        }
+        .info .news span {
+          float: right;
+        }
+        
+        .info .intro {
+          width: 240px;
+          height: 269px;
+          float: left;
+        }
+        .info .recruitment {
+          width: 240px;
+          height: 269px;
+          float: left;
+        }
+
+        .project {
+          height: 276px;
+        }
+        .project dl {
+          float: left;
+        }
+
+        .product {
+          height: 250px;
+        }
+        .product .main {
+          height: 250px;
+        }
+
+        .product .product-center {
+          width: 480px;
+          height: 250px;
+          float: left;
+        }
+        .product .rnd {
+          width: 200px;
+          height: 250px;
+          float: left;
+        }
+        .product .marketing {
+          width: 300px;
+          height: 250px;
+          float: left;
+        }
+
+
+        .product ul {
+          list-style: none;
+        }
+
+        .product li::before {
+          content: ">";
+          padding-right: 5px;
+        }
+
+        .product .product-center ul {
+          columns: 2;
+          -webkit-columns: 2;
+          -moz-columns: 2;
+        }
+
+        .footer .main {
+          height: 82px;
+        }
+
+        .footer li {
+          height: 10px;
+          float: left;
+          padding-right: 5px;
+          margin-top: 5px;
+        }
+        .footer p {
+          float: right;
+          margin-top: 5px;
+        }
+    </style>
+
+</head>
+<body>
+   <!--width: global: 1346/ main:962-->
+   <!--height: 100/58/465/269/276/250/82-->
+   <div class="header">
+        <div class="main">
+            <img src="images/qy/logo.jpg" alt="" id="logo">
+            <form action="">
+               <input type="text" placeholder="SEARCH...">
+               <button><a href="#"><img src="images/qy/search.jpg" alt=""></a></button>
+            </form>
+        </div>
+   </div> 
+   <div class="nav">
+        <div class="main">
+          <ul type="none">
+               <li><a href="#">集团介绍</a></li>
+               <li><a href="#">产品中心</a></li>
+               <li><a href="#">市场分布</a></li>
+               <li><a href="#">技术研发</a></li>
+               <li><a href="#">国际合作</a></li>
+               <li><a href="#">投资者关系</a></li>
+               <li><a href="#">新闻资讯</a></li>
+               <li class="right"><a href="#">人力资源</a></li>
+          </ul>
+        </div>
+   </div> 
+   <div class="featured">
+        <div class="main">
+          <p>Know You More</p>
+          <p>懂你，总会多一点</p>
+        </div>
+   </div> 
+   <div class="info">
+        <div class="main">
+          <div class="news">
+               <h3>公司新闻</h3>
+               <ul>
+                    <li><a href="#">陈建成董事长出席ATB集团召开年度销售大会</a><span>2013-07-30</span></li>
+                    <li><a href="#">陈建成董事长出席ATB集团召开年度销售大会</a><span>2013-07-30</span></li>
+                    <li><a href="#">陈建成董事长出席ATB集团召开年度销售大会</a><span>2013-07-30</span></li>
+                    <li><a href="#">陈建成董事长出席ATB集团召开年度销售大会</a><span>2013-07-30</span></li>
+                    <li><a href="#">陈建成董事长出席ATB集团召开年度销售大会</a><span>2013-07-30</span></li>
+                    <li><a href="#">陈建成董事长出席ATB集团召开年度销售大会</a><span>2013-07-30</span></li>
+               </ul>
+          </div>
+          <div class="intro">
+               <h3>公司介绍</h3>
+               <p>公司成立于1984年，经过近30年的发展</p>
+               <p>已成为电气制造，房地产开发和金融投资三爷并举的综合性跨国...</p>
+          </div>
+          <div class="recruitment">
+               <h3>人才招聘</h3>
+               <p>培养一流的人才，铸造一流的工程，实现员工与企业的共同发展</p>
+               <img src="images/qy/horse.jpg" alt="">
+          </div>
+        </div>
+   </div> 
+   <div class="project">
+        <div class="main">
+          <h3>市场项目</h3>
+          <dl>
+               <dt><img src="images/qy/1.jpg" alt=""></dt>
+               <dd>交通轨道</dd>
+          </dl>
+          <dl>
+               <dt><img src="images/qy/2.jpg" alt=""></dt>
+               <dd>节能环保</dd>
+          </dl>
+          <dl>
+               <dt><img src="images/qy/3.jpg" alt=""></dt>
+               <dd>航空与船舰</dd>
+          </dl>
+          <dl>
+               <dt><img src="images/qy/4.jpg" alt=""></dt>
+               <dd>石油，天然气及采矿</dd>
+          </dl>
+        </div>
+   </div> 
+   <div class="product">
+        <div class="main">
+          <div class="product-center">
+               <h3>产品中心</h3>
+               <ul>
+                    <li><a href="#">汽车电机</a></li>
+                    <li><a href="#">汽车电机</a></li>
+                    <li><a href="#">汽车电机</a></li>
+                    <li><a href="#">汽车电机</a></li>
+                    <li><a href="#">汽车电机</a></li>
+                    <li><a href="#">汽车电机</a></li>
+                    <li><a href="#">汽车电机</a></li>
+                    <li><a href="#">汽车电机</a></li>
+                    <li><a href="#">汽车电机</a></li>
+                    <li><a href="#">汽车电机</a></li>
+                    <li><a href="#">汽车电机</a></li>
+                    <li><a href="#">汽车电机</a></li>
+                    <li><a href="#">汽车电机</a></li>
+                    <li><a href="#">汽车电机</a></li>
+                    <li><a href="#">汽车电机</a></li>
+               </ul>
+          </div>
+          <div class="rnd">
+               <h3>技术研发</h3>
+               <ul>
+                    <li><a href="#">汽车电机</a></li>
+                    <li><a href="#">汽车电机</a></li>
+                    <li><a href="#">汽车电机</a></li>
+                    <li><a href="#">汽车电机</a></li>
+               </ul> 
+          </div>
+          <div class="marketing">
+               <h3>营销网络</h3>
+               <img src="images/qy/map.jpg" alt="">
+          </div>
+        </div>
+   </div> 
+   <div class="footer">
+        <div class="main">
+          <ul type="none">
+               <li><a href="#">网站地图</a> |</li>
+               <li><a href="#">联系我们</a> |</li>
+               <li><a href="#">关注关注</a> |</li>
+               <li><a href="#">采购系统入口</a></li>
+          </ul>
+          <p>Copyright &copy; 2013 控股控股集团 版权所有 浙ICP备06005901号 技术支持：<a href="#">博采互动</a> 
+          分享到: <a href="#"><img src="images/qy/weibo.jpg" alt=""></a>
+          <a href="#"><img src="images/qy/tencent_weibo.jpg" alt=""></a>
+          <a href="#"><img src="images/qy/douban.jpg" alt=""></a>
+          <a href=""><img src="images/qy/renren.jpg" alt=""></a> 
+          <a href=""><img src="images/qy/qzone.jpg" alt=""></a></p>
+        </div>
+   </div> 
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Use of sprite icon</title>
+    <style>
+        .nav {
+            width: 1520px;
+            height: 40px;
+        }
+        .main {
+            width: 1200px;
+            height: 40px;
+            margin: 0 auto;
+        }
+        ul li {
+            float: left;
+            line-height: 40px;
+
+            border-left: dashed;
+            border-top: solid;
+            border-bottom: solid;
+            border-width: 1px;;
+            border-color: #ccc;
+            
+            padding-right: 10px;
+        }
+
+        ul a {
+            color: black;
+            text-decoration: none;
+        }
+
+        .left {
+            border-left: solid;
+            border-width: 1px;;
+            border-color: #ccc;
+            
+        }
+        .right {
+            border-right: solid;
+            border-width: 1px;
+            border-color: #ccc;
+            
+        }
+
+        span {
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            
+
+            margin: 0px 15px 0px 10px;
+            vertical-align: middle;
+        }
+        
+        .icon1 { /*home*/
+            background-image: url(images/sprite.png);
+            background-position: 1px -68px;
+        }
+        .icon2 { /*news*/
+            background-image: url(images/sprite.png);
+            background-position: 0px -144px;
+        }
+
+        .icon3 { /*movie*/
+            background-image: url(images/sprite.png);
+            background-position: 0px -226px;
+        }
+        .icon4 { /*tv*/
+            background-image: url(images/sprite.png);
+            background-position: 0px -308px;
+        }
+        .icon5 { /*books*/
+            background-image: url(images/sprite.png);
+            background-position: 0px -388px;
+        }
+        .icon6 { /*vacation*/
+            background-image: url(images/sprite.png);
+            background-position: 0px -467px;
+        }
+        .icon7 { /*game*/
+            background-image: url(images/sprite.png);
+            background-position: 0px -545px;
+        }
+        .icon8 { /*cart*/
+            background-image: url(images/sprite.png);
+            background-position: 0px -617px;
+        }
+        .icon9 { /*tuan*/
+            background-image: url(images/sprite.png);
+            background-position: 0px -697px;
+        }
+        .icon10 { /*mobile*/
+            background-image: url(images/sprite.png);
+            background-position: 0px -774px;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="nav">
+    <div class="main">
+    <ul type="none">
+        <li class="left"><a href="#"><span class="icon1"></span>我的主页</a></li>
+        <li><a href="#"><span class="icon2"></span>新闻头条</a></li>
+        <li><a href=""><span class="icon4"></span>电视剧</a></li>
+        <li><a href=""><span class="icon3"></span>最新电影</a></li>
+        <li><a href=""><span class="icon5"></span>小说大全</a></li>
+        <li><a href=""><span class="icon6"></span>旅游度假</a></li>
+        <li><a href=""><span class="icon7"></span>小游戏</a></li>
+        <li><a href=""><span class="icon8"></span>正品购物</a></li>
+        <li><a href=""><span class="icon9"></span>美团外卖</a></li>
+        <li class="right"><a href=""><span class="icon10" id="rightest"></span>移动互联</a></li>
+    </ul>
+    </div>
+    </div> 
+</body>
+</html>
