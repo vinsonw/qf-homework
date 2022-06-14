@@ -20,13 +20,20 @@
             margin: 0 auto;
         }
 
-        .header {
-            height: 100px;
-            /* background-color: #000; */
-        }
 
         #logo {
                margin-top: 30px;
+        }
+
+        /*
+        ---------------------------
+       header 
+        ---------------------------
+        */
+
+        .header {
+            height: 100px;
+            /* background-color: #000; */
         }
 
         .header form {
@@ -52,7 +59,13 @@
           height: 26px;
         }
 
+        /*
+        ---------------------------
+       nav 
+        ---------------------------
+        */
         .nav {
+          font-size: 14px;
           background-color: #2c2c2c;
           height: 58px; /*important*/
         }
@@ -72,13 +85,37 @@
           border-right: none;
         }
     
+        /*
+        ---------------------------
+       featured 
+        ---------------------------
+        */
         .featured {
           height: 465px;
           background-image: url(images/qy/featured.jpg);
+          overflow: hidden;
+          font-family: "微软雅黑";
+          color: white;
+        }
+        #slogan-en {
+          font-weight: normal;
+          margin-left: 12px;
+          margin-top: 82px;
+        }
+        #slogan-zh {
+          font-weight: normal;
+          margin-left: 12px;
+          margin-top: 22px;
         }
 
+        /*
+        ---------------------------
+       info 
+        ---------------------------
+        */
         .info {
           height: 269px;
+          font-size: 12px;
         }
 
         .info .news {
@@ -87,8 +124,16 @@
           float: left;
         }
         .info .news h3 {
+          font-size: 16px;
           line-height: 86px;
           font-weight: normal;
+        }
+        .info .news ul {
+          line-height: 2;
+          margin-left: 10px;
+        }
+        .info .news span {
+          color: #a6a6a6;
         }
         a {
           color: black;
@@ -99,50 +144,135 @@
         }
         
         .info .intro {
-          width: 240px;
+          width: 210px;
           height: 269px;
           float: left;
+          line-height: 1.5;
+          background-color: #f1f1f1;
+          margin-left: 20px;
+          padding-left: 15px;
+          padding-right: 15px;
+        }
+        .info .intro h3 {
+          font-size: 16px;
+          line-height: 86px;
+          font-weight: normal;
+        }
+        #intro-sub-title {
+          font-size: 14px;
+          color: black;
+        }
+
+        #intro-detail {
+          margin-top: 20px;
+          color: #a6a6a6;
         }
         .info .recruitment {
           width: 240px;
           height: 269px;
           float: left;
+          line-height: 1.5;
+          margin-left: 20px;
+          
+        }
+        .info .recruitment h3 {
+          font-size: 16px;
+          line-height: 86px;
+          font-weight: normal;
         }
 
+        /*
+        ---------------------------
+       project 
+        ---------------------------
+        */
         .project {
-          height: 276px;
+          height: 350px; /*高度需要留够，否则会移除到下方的元素中*/
         }
+        .project .main {
+          height: 350px;
+        }
+
+        .project h3 {
+          font-weight: normal;
+          line-height: 4;
+        }
+        
         .project dl {
+          height: 276px;
+          width: 210px;
           float: left;
+          margin-right: 40px;
+
+          line-height: 1.5;
+          font-size: 12px;
+          color: #515151;
         }
+
+        .project dd {
+            margin-top: 0px;
+        }
+
+        /*
+        ---------------------------
+        product
+        ---------------------------
+        */
 
         .product {
           height: 250px;
+          font-size: 12px;
+          color: #606060;
+          background-color: #e5e5e5;
+        }
+        .product a {
+          color: #606060;
         }
         .product .main {
           height: 250px;
+          /* background-color: pink; */
         }
 
         .product .product-center {
           width: 480px;
-          height: 250px;
+          height: 234px;
           float: left;
+          margin-top: 15px;
+          margin-right: 50px;
+          line-height: 2.0;
+          /* background-color: blue; */
         }
         .product .rnd {
           width: 200px;
-          height: 250px;
+          height: 234px;
+          margin-top: 15px;
+          margin-right: 50px;
+          line-height: 2.0;
           float: left;
+          /* background-color: blue; */
         }
         .product .marketing {
           width: 300px;
-          height: 250px;
+          height: 234px; /*为什么234+15=249才行（否则会往下溢出）？*/
+          margin-top: 15px;
           float: left;
+          /* background-color: blue; */
+        }
+
+        .product h3 {
+          font-weight: normal;
+          line-height: 2.5;
+          border-bottom: solid 1px #c1c1c1;
         }
 
 
         /*给无序列表的项目显示指定的项目图标*/
         .product ul {
           list-style: none;
+          margin-top: 20px;
+        }
+        .product img {
+          margin-top: 20px;
         }
         .product li::before {
           content: ">";
@@ -151,15 +281,28 @@
 
         /*如何让无序列表显示为两列*/
         .product .product-center ul {
-          columns: 2;
-          -webkit-columns: 2;
-          -moz-columns: 2;
+          columns: 3;
+          -webkit-columns: 3;
+          -moz-columns: 3;
         }
 
+        /*
+        ---------------------------
+       footer 
+        ---------------------------
+        */
+
+        .footer {
+          height: 82px;
+          font-size: 12px;
+        }
         .footer .main {
           height: 82px;
         }
 
+        .footer ul {
+          margin-top: 24px;
+        }
         .footer li {
           height: 10px;
           float: left;
@@ -167,6 +310,7 @@
           margin-top: 5px;
         }
         .footer p {
+          margin-top: 24px;
           float: right;
           margin-top: 5px;
         }
@@ -201,8 +345,8 @@
    </div> 
    <div class="featured">
         <div class="main">
-          <p>Know You More</p>
-          <p>懂你，总会多一点</p>
+          <h2 id="slogan-en">Know You More</h2>
+          <h2 id="slogan-zh">懂你，总会多一点</h2>
         </div>
    </div> 
    <div class="info">
@@ -220,8 +364,8 @@
           </div>
           <div class="intro">
                <h3>公司介绍</h3>
-               <p>公司成立于1984年，经过近30年的发展</p>
-               <p>已成为电气制造，房地产开发和金融投资三爷并举的综合性跨国...</p>
+               <p id="intro-sub-title">公司成立于1984年，<br>经过近30年的发展</p>
+               <p id="intro-detail">已成为电气制造，房地产开发和金融投资三业并举的综合性跨国...</p>
           </div>
           <div class="recruitment">
                <h3>人才招聘</h3>
@@ -235,19 +379,19 @@
           <h3>市场项目</h3>
           <dl>
                <dt><img src="images/qy/1.jpg" alt=""></dt>
-               <dd>交通轨道</dd>
+               <dd>交通轨道: 由于主要采用电气牵引，而且轮轨摩擦阻力较小，与公共...</dd>
           </dl>
           <dl>
                <dt><img src="images/qy/2.jpg" alt=""></dt>
-               <dd>节能环保</dd>
+               <dd>节能环保： 某由于主要采用电气牵引，而且轮轨摩擦阻力较小，与公共...</dd>
           </dl>
           <dl>
                <dt><img src="images/qy/3.jpg" alt=""></dt>
-               <dd>航空与船舰</dd>
+               <dd>航空与船舰:由于主要采用电气牵引，而且轮轨摩擦阻力较小，与公共...</dd>
           </dl>
           <dl>
                <dt><img src="images/qy/4.jpg" alt=""></dt>
-               <dd>石油，天然气及采矿</dd>
+               <dd>石油，天然气及采矿:由于主要采用电气牵引，而且轮轨摩擦阻力较小，与公共...</dd>
           </dl>
         </div>
    </div> 
@@ -256,10 +400,9 @@
           <div class="product-center">
                <h3>产品中心</h3>
                <ul>
-                    <li><a href="#">汽车电机</a></li>
-                    <li><a href="#">汽车电机</a></li>
-                    <li><a href="#">汽车电机</a></li>
-                    <li><a href="#">汽车电机</a></li>
+                    <li><a href="#">汽车电机1</a></li>
+                    <li><a href="#">汽车电机2</a></li>
+                    <li><a href="#">汽车电机3</a></li>
                     <li><a href="#">汽车电机</a></li>
                     <li><a href="#">汽车电机</a></li>
                     <li><a href="#">汽车电机</a></li>
