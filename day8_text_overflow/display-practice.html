@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {padding: 0; margin: 0;}
+        body {
+            background-color: #d1d4db;
+        }
+        .post-card-backdrop {
+            width: 884px;
+            height: 130px;
+
+            margin-left: 30px;
+            margin-top: 30px;
+
+            background-color: #f8f9fc;
+            font-size: 12px;
+            color: #61687c;
+        }
+        .post-primary-backdrop {
+            width: 884px;
+            height: 130px;
+            background-color: #f8f9fc;
+        }
+
+        /* .post-card {
+            width: 824px;
+            margin: 0 auto;
+        } */
+        .post-card-backdrop h3 {
+           font-size: 16px; 
+           font-weight: normal;
+           color: #00c2b3;
+        }
+        .post-primary {
+            width: 824px;
+            height: 70px;
+            padding-top: 20px;
+            padding-left: 30px;
+            padding-right: 30px;
+
+            background-color: #fff;
+        }
+        .post-primary .post-info {
+            width: 460px;
+            float: left;
+        }   
+         .salary {
+            font-size: 16px;
+            font-weight: 400; height: 26px;
+
+            line-height: 26px;
+            color: #fc703e;
+            padding-right: 12px;;
+         }
+         .experience {
+            font-weight: 400;
+            line-height: 26px;
+            font-size: 14px;
+            padding-right: 6px;
+            border-right: #d1d4db 1px solid;
+         }
+
+         .education {
+            font-weight: 400;
+            line-height: 26px;
+            font-size: 14px;
+            padding-left: 6px;
+            padding-right: 6px;
+
+         }
+        .post-primary .employor-info {
+            width: 354px;
+            height: 56px;
+            float: right;
+        }
+        .post-primary .employor-info .company-info {
+            float: left;
+        }
+
+        .industry {
+            font-weight: 400;
+            line-height: 26px;
+            font-size: 12px;
+            padding-right: 6px;
+            border-right: #d1d4db 1px solid;
+        }
+        .stage {
+            font-weight: 400;
+            line-height: 26px;
+            font-size: 12px;
+            padding-left: 6px;
+            padding-right: 6px;
+            border-right: #d1d4db 1px solid;
+        }
+        .headcount {
+            font-weight: 400;
+            line-height: 26px;
+            font-size: 12px;
+            padding-left: 6px;
+
+        }
+        .post-primary .employor-info img {
+            width: 56px;
+            height: 56px;
+            float: right;
+            /* vertical-align: top; */
+            margin-top: 0;
+        }
+        .post-append {
+            width: 824px;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+        .post-append .tags {
+            float: left;
+            height: 40px;
+            width: 460px;
+        }
+        .post-append .tags ul {
+            list-style: none;
+        }
+        .post-append .tags ul li {
+            float: left;
+            /*copied from the original site*/
+            height: 21px;
+            line-height: 21px;
+            padding: 0 8px;
+            border: 1px solid #eee;
+            border-radius: 2px;
+            margin-right: 10px;
+            margin-top: 9px;
+            /*copy ended*/
+        }
+        .post-append .bonus {
+            margin-top: 9px;
+            float: right;
+            height: 40px;
+            width: 354px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+
+        }
+        /*===================*/
+        /* 练习重点 */
+        /*===================*/
+
+        .hr {
+            margin-left: 10px;
+            display: inline-block;
+            text-align: center;
+            border: #d1d4db 1px solid;
+            width: 90px;
+        }
+        .talk {
+            margin-left: 10px;
+            /* display: inline-block; */
+            text-align: center;
+            border: #d1d4db 1px solid;
+            background-color: #00c2b3;
+            width: 90px;
+            display: none;
+        }
+        .talk img {
+            height: 13px;
+            width: 13px;
+            vertical-align: top; 
+        }
+        .post-card-backdrop:hover .hr{
+            display: none;
+        }
+        .post-card-backdrop:hover .talk{
+            display: inline-block;
+        }
+        .hr img {
+            height: 13px;
+            width: 13px;
+            vertical-align: top; 
+        }
+        .hr .hr-name {
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+        .hr .hr-title {
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="post-card-backdrop">
+        <div class="post-primary">
+            <div class="post-info">
+                <h3>前端开发工程师 [深圳·罗湖区·笋岗]</h3>
+                <p><span class="salary">18-25K·13薪</span>
+                    <span class="experience">5-10年</span>
+                    <span class="education">本科</span>
+                    <span class="hr"><img src="images/icon-chat-v2.png" alt=""><span class="hr-name">黄女士</span><span class="hr-title">HR</span></span>
+                    <span class="talk"><img src="images/icon-chat-hover-v2.png" alt="">立即沟通</span>
+                </p>
+            </div>
+            <div class="employor-info">
+                <div class="company-info">
+                <h3>北京风知力</h3>
+                <span class="industry">广告/公关/会展</span>
+                <span class="stage">未融资</span>
+                <span class="headcount">20-99人</span>
+                </div>
+                <a href="#"><img src="images/company_logo.jpg" alt=""></a>
+            </div>
+        </div>
+        <div class="post-append">
+            <div class="tags">
+                <ul>
+                    <li>前端开发</li>
+                    <li>U3D开发</li>
+                    <li>Three.js</li>
+                    <li>Vue</li>
+                    <li>React.js</li>
+                </ul>
+            </div>
+            <div class="bonus">餐补，节日福利，带薪年假，五险，股票期权，全勤奖，等等邓，等等</div>
+        </div>
+</div>
+    <!--  What follows is discarded -->
+</body>
+</html>

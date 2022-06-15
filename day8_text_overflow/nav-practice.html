@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {padding: 0; margin: 0;}
+        ul {
+            margin-left: 100px;
+            margin-top: 100px;
+
+            width:1000px;
+            height: 39px;
+            list-style: none;
+            border-bottom: solid 1px #666;
+        }
+
+
+        ul a {
+            float:left;
+            /*在有float:left的情况下，此语句冗余，可以删除*/
+            display: block;
+            width: 86px; height: 35px;
+            margin-left: 12px;
+            margin-top: 3px; /*默认li在ul中"吸顶"，需要将li按下来*/
+            border: 1px solid #ccc;
+            border-bottom: none;    
+            background-color: #f7f7f7;
+
+            text-decoration: none;
+            line-height: 35px;
+            text-align: center;
+        }
+
+        ul a:hover {
+            margin-top: 0; /*重点：恢复"吸顶"效果*/
+            border: solid 1px #666; /*a:hover的border-top占据ul高度(39px)中的1px*/
+            width: 86px; height: 39px; /*所以39px即可刚好盖住ul的border-bootom*/
+            border-bottom: none;
+            background-color: #fff;
+        }
+
+        .box1 {
+            width: 100px;
+            height: 100px;
+            border: solid 10px #000;
+        }
+        .box2 {
+            width: 50px;
+            height: 50px;
+            border: solid 10px yellow;
+        }
+        }
+
+    </style>
+</head>
+<body>
+   <ul>
+    <li><a href="#">home首页</a></li>
+    <li><a href="#">home首页</a></li>
+    <li><a href="#">home首页</a></li>
+    <li><a href="#">home首页</a></li>
+    <li><a href="#">home首页</a></li>
+    <li><a href="#">home首页</a></li>
+    <li><a href="#">home首页</a></li>
+    <li><a href="#">home首页</a></li>
+   </ul> 
+</body>
+</html>
