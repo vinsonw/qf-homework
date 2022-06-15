@@ -1,0 +1,330 @@
+
+* {
+        padding: 0;
+        margin: 0;
+    }
+.header,.nav,.featured,.info,.project,.product,.footer {
+    width: 1346px;
+}
+
+.main {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+
+#logo {
+        margin-top: 30px;
+}
+
+/*
+---------------------------
+header 
+---------------------------
+*/
+
+.header {
+    height: 100px;
+    /* background-color: #000; */
+}
+
+.header form {
+    width: 234px;
+    height: 26px;
+
+    float: right;
+    border: solid 2px #e5e5e5;
+    background-color: #f1f1f1;
+    margin-top: 30px;
+}
+.header form input {
+    width: 210px;
+    height: 26px;
+    background-color: transparent;
+
+    border:0;
+    outline: none;
+    float: left;
+}
+.header form button {
+    border: 0;
+    height: 26px;
+}
+
+/*
+---------------------------
+nav 
+---------------------------
+*/
+.nav {
+    font-size: 14px;
+    background-color: #2c2c2c;
+    height: 58px; /*important*/
+}
+.nav li {
+    line-height: 58px;
+    border-right: dotted 1px #4a4a4a;
+    float: left;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+.nav a {
+    color: white;
+    text-decoration: none;
+
+}
+.nav .right {
+    border-right: none;
+}
+
+/*
+---------------------------
+featured 
+---------------------------
+*/
+.featured {
+    height: 465px;
+    background-image: url(images/qy/featured.jpg);
+    overflow: hidden;
+    font-family: "微软雅黑";
+    color: white;
+}
+#slogan-en {
+    font-weight: normal;
+    margin-left: 12px;
+    margin-top: 82px;
+}
+#slogan-zh {
+    font-weight: normal;
+    margin-left: 12px;
+    margin-top: 22px;
+}
+
+/*
+---------------------------
+info 
+---------------------------
+*/
+.info {
+    height: 269px;
+    font-size: 12px;
+}
+
+.info .news {
+    width: 480px;
+    height: 269px;
+    float: left;
+
+}
+.info .news h3 {
+    font-size: 16px;
+    line-height: 86px;
+    font-weight: normal;
+}
+
+.info .news li {
+    line-height: 24px;
+    list-style: none;
+    /*必须设置高度，否则background-image
+    会随着list-sytle设置为none而消失*/
+    height: 24px; /*重点*/
+
+    background-image: url(images/qy/list_symbol.jpg);
+    background-position: left center;
+    background-repeat: no-repeat;
+    padding-left: 13px;
+}
+
+.info .news .heading {
+    /*Floating an element with float automatically makes it into a block-level element by applying 
+    display: block to it. A block-level element occupies the entire space of its parent element (container), thereby creating a 'block'.*/
+    float: left;
+
+    /*重点：单行文本溢出必须设置的四个属性*/
+    width: 292px; /*设置float以后就可以设置width*/
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+}
+.info .news .date {
+    float: right;
+    color: #a6a6a6;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.info .intro {
+    width: 210px;
+    height: 269px;
+    float: left;
+    line-height: 1.5;
+    background-color: #f1f1f1;
+    margin-left: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.info .intro h3 {
+    font-size: 16px;
+    line-height: 86px;
+    font-weight: normal;
+}
+#intro-sub-title {
+    font-size: 14px;
+    color: black;
+}
+
+#intro-detail {
+    margin-top: 20px;
+    color: #a6a6a6;
+}
+.info .recruitment {
+    width: 240px;
+    height: 269px;
+    float: left;
+    line-height: 1.5;
+    margin-left: 20px;
+    
+}
+.info .recruitment h3 {
+    font-size: 16px;
+    line-height: 86px;
+    font-weight: normal;
+}
+
+/*
+---------------------------
+project 
+---------------------------
+*/
+.project {
+    height: 350px; /*高度需要留够，否则会移除到下方的元素中*/
+}
+.project .main {
+    height: 350px;
+}
+
+.project h3 {
+    font-weight: normal;
+    line-height: 4;
+}
+
+.project dl {
+    height: 276px;
+    width: 210px;
+    float: left;
+    margin-right: 40px;
+
+    line-height: 1.5;
+    font-size: 12px;
+    color: #515151;
+}
+
+.project dd {
+    margin-top: 0px;
+}
+
+/*
+---------------------------
+product
+---------------------------
+*/
+
+.product {
+    height: 250px;
+    font-size: 12px;
+    color: #606060;
+    background-color: #e5e5e5;
+}
+.product a {
+    color: #606060;
+}
+.product .main {
+    height: 250px;
+    /* background-color: pink; */
+}
+
+.product .product-center {
+    width: 480px;
+    height: 234px;
+    float: left;
+    margin-top: 15px;
+    margin-right: 50px;
+    line-height: 2.0;
+    /* background-color: blue; */
+}
+.product .rnd {
+    width: 200px;
+    height: 234px;
+    margin-top: 15px;
+    margin-right: 50px;
+    line-height: 2.0;
+    float: left;
+    /* background-color: blue; */
+}
+.product .marketing {
+    width: 300px;
+    height: 234px; /*为什么234+15=249才行（否则会往下溢出）？*/
+    margin-top: 15px;
+    float: left;
+    /* background-color: blue; */
+}
+
+.product h3 {
+    font-weight: normal;
+    line-height: 2.5;
+    border-bottom: solid 1px #c1c1c1;
+}
+
+
+/*给无序列表的项目显示指定的项目图标*/
+.product ul {
+    list-style: none;
+    margin-top: 20px;
+}
+.product img {
+    margin-top: 20px;
+}
+.product li::before {
+    content: ">";
+    padding-right: 5px;
+}
+
+/*如何让无序列表显示为两列*/
+.product .product-center ul {
+    columns: 3;
+    -webkit-columns: 3;
+    -moz-columns: 3;
+}
+
+/*
+---------------------------
+footer 
+---------------------------
+*/
+
+.footer {
+    height: 82px;
+    font-size: 12px;
+}
+.footer .main {
+    height: 82px;
+}
+
+.footer ul {
+    margin-top: 24px;
+}
+.footer li {
+    height: 10px;
+    float: left;
+    padding-right: 5px;
+    margin-top: 5px;
+}
+.footer p {
+    margin-top: 24px;
+    float: right;
+    margin-top: 5px;
+}
