@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {padding: 0; margin:0}
+        div {
+            width: 1200px; height: 700px;
+            border: 10px solid black;
+            position: relative;
+            overflow: hidden; /* important: trim images not in the div */
+        }
+        #scene {
+            position: absolute;
+        }
+        #grass {
+            position: absolute;
+            top: 500px;
+        }
+        #string {
+            position: absolute;
+        }
+        #giraffe {
+            position: absolute;
+            top: 350px;
+            left: -200px;
+        }
+        #lion {
+            position: absolute;
+            right: 20px;
+            top: 300px;
+        }
+    </style>
+</head>
+<body>
+   <div>
+    <img src="images/composite/grass.jpg" alt="" id="grass">
+    <img src="images/composite/scene.png" alt="" id="scene">
+    <img src="images/composite/string.png" alt="" id="string">
+    <img src="images/composite/giraffe.png" alt="" id="giraffe">
+    <img src="images/composite/lion.png" alt="" id="lion">
+   </div> 
+</body>
+</html>

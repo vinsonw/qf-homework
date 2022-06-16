@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{padding:0; margin:0;}
+			.nav{
+				width:1600px; height:44px;
+				background: #d92b34;
+			}
+			.nav .main{
+				width:1000px; height:44px;
+				background: #c8141e;
+				margin: 0 auto;
+			}
+			.nav ul li{
+				float:left;
+				list-style: none;
+			}
+			.nav ul li a{
+				text-decoration: none;
+				color: #fff;
+				font-size: 16px;
+				line-height: 44px;
+				padding: 0 19px;
+				display: block;
+				/*目地：是为了让可点击的区域变大*/
+			}
+			.nav ul li a:hover{
+				background: #f2f2f2;
+				color: #333;
+			}
+			.nav ul{
+				position: relative;
+			}
+			.menu{
+				width:1000px; height:352px;
+				background: #fff;
+				border: solid 2px #881123;
+				border-top: 0;
+				/*不占位*/
+				position: absolute;
+				left: 0;
+				top: 44px;
+				display: none;
+			}
+			.nav li:hover .menu{
+				display: block;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="nav">
+			<div class="main">
+				<ul>
+					<li><a href="#">建桥概况</a>
+						<div class="menu"></div>
+					</li>
+					<li><a href="#">建桥概况</a>
+						<div class="menu">2个二级</div>
+					</li>
+					<li><a href="#">建桥概况</a></li>
+					<li><a href="#">建桥概况</a></li>
+					<li><a href="#">建桥概况</a></li>
+					<li><a href="#">建桥概况</a>
+						<div class="menu">6个二级</div>
+					</li>
+					<li><a href="#">建桥概况</a></li>
+					<li><a href="#">桥概况</a></li>
+					<li><a href="#">建概况</a></li>
+					<li><a href="#">建桥概况</a></li>
+				</ul>
+			</div>
+		</div>
+		
+	</body>
+</html>

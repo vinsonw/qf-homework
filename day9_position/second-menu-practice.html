@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {padding: 0; margin: 0;}
+        .nav {
+            width: 1200px; height: 36px;
+            background-color: #d92b34;
+        }
+
+        .main {
+            width: 1000px; height: 36px;
+            margin: 0 auto;
+            background-color: #c8141e;
+        }
+        .nav .main ul {
+            list-style-type: none;
+            position: relative;
+        }
+        .nav .main li {
+            float: left;
+            line-height: 36px;
+
+        }
+        .nav .main a {
+            text-decoration: none;
+            color: #fff;
+            display: block; /*增大可点区域*/
+            padding: 0 19px;
+        }
+        .menu {
+            position: absolute;
+            left: 0;
+            top: 36px; /* TODO: look into */
+            width: 1000px; height: 500px;
+            border: 2px red solid;
+            border-top: none;
+
+            display: none;
+        }
+        .nav .main li:hover .menu {
+            display: block;
+        }
+        .nav .main li a:hover{
+            color: black;
+            background-color: #fafafa;
+        }
+    </style>
+</head>
+<body>
+   <div class="nav">
+    <div class="main">
+        <ul>
+            <li><a href="#">建桥概览</a>
+                <div class="menu">Something about this title 1</div>
+            </li>
+            <li><a href="#">建桥概览</a>
+                <div class="menu">Something about this title 2</div>
+            </li>
+            <li><a href="#">建桥概览</a>
+                <div class="menu">Something about this title 3</div>
+            </li>
+            <li><a href="#">建桥概览</a>
+                <div class="menu">Something about this title 4</div>
+            </li>
+            <li><a href="#">建桥概览</a>
+                <div class="menu">Something about this title 5</div>
+            </li>
+            <li><a href="#">建桥概览</a>
+                <div class="menu">Something about this title 6</div>
+            </li>
+            <li><a href="#">建桥概览</a>
+                <div class="menu">Something about this title 7</div>
+            </li>
+            <li><a href="#">建桥概</a>
+                <div class="menu">Something about this title 8</div>
+            </li>
+            <li><a href="#">建桥概</a>
+                <div class="menu">Something about this title 9</div>
+            </li>
+            <li><a href="#">建桥概蓝</a>
+                <div class="menu">Something about this title 10</div>
+            </li>
+        </ul>
+    </div>
+   </div> 
+</body>
+</html>

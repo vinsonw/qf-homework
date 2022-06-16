@@ -1,0 +1,45 @@
+.outer,.inner {
+    list-style-type: none;
+}
+
+.outer {
+    height: 30px;
+    line-height: 30px;
+    background-color: red;
+}
+
+.outer>li {
+    float: left;
+    width: 100px;
+    margin-left: 20px;
+
+    line-height: 30px;
+    text-align: center;
+}
+
+.inner {
+    display: none;
+    padding: 0; /*Cancel indent of inner ul*/
+}
+
+.inner li {
+    width: 100px;
+
+    height: 40px;
+    line-height: 40px;
+    text-align: center; /*redundant*/
+    /* margin-left: 0; */ /*with parent selector on line 14, no need for this line*/
+}
+
+.inner li a {
+    text-decoration: none;
+    color: black;
+}
+
+.outer li:hover .inner{
+    display: list-item;
+}
+
+.inner li:hover {
+    background-color: yellow;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {padding: 0; margin: 0;}
+        .all {
+            width: 1328px;
+            height: 376px;
+        }
+        .box {
+            width: 876px; height: 376px;
+            background-color: red;
+            margin: 0 auto;
+
+            position: relative;
+        }
+        img {
+            width: 876px; height: 376px;
+        }
+        a {
+            text-decoration: none;
+            /* display: block; */
+            width: 30px;
+            height: 50px;
+            line-height: 50px;
+            font-size: 30px;
+            background-color: black;
+            opacity: 80%;
+            color: white;
+            text-align: center;
+            display: none;
+        }
+        .box:hover a {
+            display: block;
+        }
+        #left-arrow {
+            position: absolute;
+            top: 138px;
+        }
+        #right-arrow {
+            position: absolute;
+            top: 138px;
+            right: 0;
+        }
+        p {
+            font-weight: bold;
+            color: white;
+            background-color: black;
+            padding: 5px;
+
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+        }
+    </style>
+</head>
+<body>
+<div class="all">
+   <div class="box">
+        <img src="images/lab.jpg" alt="">
+        <a href="#" id="left-arrow">&lt;</a>
+        <a href="#" id="right-arrow">&gt;</a>
+        <p>机电学院举办首届“集成电路产教融合基金”颁奖仪式</p>
+   </div> 
+</div>
+</body>
+</html>

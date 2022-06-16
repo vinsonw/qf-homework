@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {padding: 0; margin: 0;}
+        div {
+            width: 92px; height: 92px;
+            float: left;
+            margin-left: 10px;
+            /* background-color: red; */
+            text-align: center;
+            line-height: 92px; /*图片垂直居中的重点，第一步（给父级元素加ling-height*/
+        }
+        div:hover {
+            background-image: url(images/bg.png);
+            background-repeat: no-repeat;
+        }
+
+        img {
+            /* height: 92px; */
+            vertical-align: middle; /*图片垂直居中的重点，第二步（给图片设置vertical-align: middle*/
+        }
+    </style>
+</head>
+<body>
+   <div class="logo1"><img src="images/logo1.png" alt=""></div> 
+   <div class="logo2"><img src="images/logo2.png" alt=""></div> 
+   <div class="logo3"><img src="images/logo3.png" alt=""></div> 
+   <div class="logo4"><img src="images/logo4.png" alt=""></div> 
+   <div class="logo5"><img src="images/logo5.png" alt=""></div> 
+   <div class="logo6"><img src="images/logo6.png" alt=""></div> 
+   <div class="logo7"><img src="images/logo7.png" alt=""></div> 
+</body>
+</html>
