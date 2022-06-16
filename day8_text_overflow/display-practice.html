@@ -153,42 +153,74 @@
         .hr {
             margin-left: 10px;
             display: inline-block;
-            text-align: center;
             border: #d1d4db 1px solid;
-            width: 90px;
+
+            height: 20px;
+            line-height: 20px;
+
+            /* padding-left: 3px;
+            padding-right: 3px; */
         }
+
+        .hr img {
+            height: 13px; 
+            width: 13px;
+            vertical-align: middle;
+            position: relative;
+            top: -2px;
+        }
+
+        .hr .hr-name {
+            padding-left: 5px;
+            padding-right: 5px;
+            border-right: 1px solid #d1d4db;
+            height: 20px;
+        }
+        .hr .hr-title {
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+
         .talk {
+            display: inline-block;
             margin-left: 10px;
-            /* display: inline-block; */
             text-align: center;
             border: #d1d4db 1px solid;
             background-color: #00c2b3;
-            width: 90px;
+
+            height: 20px;
+            line-height: 20px;
+
+            /* padding-left: 3px;
+            padding-right: 3px; */
             display: none;
         }
         .talk img {
             height: 13px;
             width: 13px;
-            vertical-align: top; 
+             /* not "center"! */
+            line-height: 20px;
+            vertical-align: middle;
+            /* TODO 依然无法居中，稍后再看 */
+            position: relative;
+            top: -2px;
+            /* TODO follow up: 通过position定位微调图片，使其居中*/
+        }
+        
+        .talk .communicate {
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+
+        .talk  a {
+            text-decoration: none;
+            color: white;
         }
         .post-card-backdrop:hover .hr{
             display: none;
         }
         .post-card-backdrop:hover .talk{
             display: inline-block;
-        }
-        .hr img {
-            height: 13px;
-            width: 13px;
-            vertical-align: top; 
-        }
-        .hr .hr-name {
-            padding-left: 5px;
-            padding-right: 5px;
-        }
-        .hr .hr-title {
-            padding-left: 5px;
-            padding-right: 5px;
         }
 
     </style>
@@ -202,7 +234,7 @@
                     <span class="experience">5-10年</span>
                     <span class="education">本科</span>
                     <span class="hr"><img src="images/icon-chat-v2.png" alt=""><span class="hr-name">黄女士</span><span class="hr-title">HR</span></span>
-                    <span class="talk"><img src="images/icon-chat-hover-v2.png" alt="">立即沟通</span>
+                    <span class="talk"><a href="#"><img src="images/icon-chat-hover-v2.png" alt=""><span class="communicate">立即沟通</span></a></span>
                 </p>
             </div>
             <div class="employor-info">
