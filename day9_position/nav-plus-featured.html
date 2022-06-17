@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {padding: 0; margin: 0;}
+
+        /* nav area  2000*88 */
+        .nav {
+            /* width: 1350px;  */
+            width: 100%; 
+            height: 44px;
+            background-color: #d92b34;
+        }
+
+        .main {
+            width: 1000px; height: 44px;
+            margin: 0 auto;
+            background-color: #c8141e;
+        }
+        .nav .main ul {
+            list-style-type: none;
+            position: relative; /*作为menu的参照*/
+        }
+        .nav .main li {
+            float: left;
+            line-height: 44px;
+
+        }
+        .nav .main a {
+            text-decoration: none;
+            color: #fff;
+            display: block; /*增大可点区域*/
+            padding: 0 9px;
+        }
+        .menu {
+            position: absolute;
+            left: 0;
+            top: 44px; /* TODO: look into */
+            z-index: 1;
+            width: 996px; height: 500px; /*border的宽度会算在定位的父级元素中*/
+            border: 2px red solid;
+            border-top: none;
+            background-color: #fff;
+
+            display: none;
+        }
+        .nav .main li:hover .menu {
+            display: block;
+        }
+        .nav .main li a:hover{
+            color: black;
+            background-color: #fafafa;
+        }
+
+        /* featured area */
+
+        /* nav area  2000*752 */
+        .featured {
+            /* width: 1350px; */
+            width: 100%;
+            height: 376px;
+        }
+
+        .box {
+            width: 1000px; height: 376px;
+            background-color: red;
+            margin: 0 auto;
+
+            position: relative;
+        }
+        img {
+            width: 1000px; height: 376px;
+        }
+        .featured .box a {
+            text-decoration: none;
+            /* display: block; */
+            width: 30px;
+            height: 50px;
+            line-height: 50px;
+            font-size: 30px;
+            background-color: black;
+            opacity: 80%;
+            color: white;
+            text-align: center;
+            display: none;
+        }
+        .box:hover a {
+            display: block;
+        }
+        #left-arrow {
+            position: absolute;
+            top: 138px;
+        }
+        #right-arrow {
+            position: absolute;
+            top: 138px;
+            right: 0;
+        }
+        .featured p {
+            font-weight: bold;
+            color: white;
+            background-color: black;
+            padding: 5px;
+
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+        }
+    </style>
+</head>
+<body>
+   <div class="nav">
+    <div class="main">
+        <ul>
+            <li><a href="#">建桥概览</a>
+                <div class="menu">Something about this title 1</div>
+            </li>
+            <li><a href="#">建桥概览</a>
+                <div class="menu">Something about this title 2</div>
+            </li>
+            <li><a href="#">建桥概览</a>
+                <div class="menu">Something about this title 3</div>
+            </li>
+            <li><a href="#">建桥概览</a>
+                <div class="menu">Something about this title 4</div>
+            </li>
+            <li><a href="#">建桥概览</a>
+                <div class="menu">Something about this title 5</div>
+            </li>
+            <li><a href="#">建桥概览</a>
+                <div class="menu">Something about this title 6</div>
+            </li>
+            <li><a href="#">建桥概览</a>
+                <div class="menu">Something about this title 7</div>
+            </li>
+            <li><a href="#">建桥概</a>
+                <div class="menu">Something about this title 8</div>
+            </li>
+            <li><a href="#">建桥概</a>
+                <div class="menu">Something about this title 9</div>
+            </li>
+            <li><a href="#">建桥概蓝</a>
+                <div class="menu">Something about this title 10</div>
+            </li>
+        </ul>
+    </div> 
+   </div>
+    <div class="featured">
+        <div class="box">
+            <img src="images/lab.jpg" alt="">
+            <a href="#" id="left-arrow">&lt;</a>
+            <a href="#" id="right-arrow">&gt;</a>
+            <p>机电学院举办首届“集成电路产教融合基金”颁奖仪式</p>
+        </div> 
+    </div>
+</body>
+</html>
