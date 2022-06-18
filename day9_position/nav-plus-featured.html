@@ -40,7 +40,9 @@
             position: absolute;
             left: 0;
             top: 44px; /* TODO: look into */
-            z-index: 1;
+            /*如果不加z-inex:1;，featured部分的图片会盖在二级菜单上面*/
+            /*原因见：https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Positioning/Understanding_z_index/Stacking_without_z-index*/
+            z-index: 1; 
             width: 996px; height: 500px; /*border的宽度会算在定位的父级元素中*/
             border: 2px red solid;
             border-top: none;
