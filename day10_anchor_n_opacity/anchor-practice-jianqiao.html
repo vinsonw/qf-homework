@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {padding: 0; margin: 0;}
+        .all {
+            margin: 100px;
+            width: 268px;
+        }
+        ul, ol {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        /*设置展示窗口的尺寸*/
+        ul {
+            width: 268px;
+            height: 150px;
+            overflow: hidden;
+
+        }
+
+        ul li {
+            position: relative;
+        }
+
+
+        /*使内容尺寸和展示窗口的尺寸相同*/
+        img {
+            width: 268px; height: 120px;
+        }
+        ul p {
+            width: 268px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+        }
+
+        ul li a {
+            display: block;
+            width: 20px; height: 30px;
+            background-color: black;
+            color: white;
+            text-align: center;
+            line-height: 30px;
+            position: absolute;
+        }
+
+        ul li .left-arrow {
+            left: 0;
+            top: 45px;
+        }
+
+        ul li .right-arrow {
+            right: 0;
+            top: 45px;
+        }
+
+
+        ol {
+            width: 200px;
+            margin: 0 auto;
+        }
+        ol li {
+            float: left;
+            margin: 10px 10px;
+        }
+        ol li a {
+            display: block;
+            width: 20px;
+            height: 20px;
+            background-color: black;
+            color: #fff;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="all">
+   <ul>
+    <li id="chen">
+        <!-- img: 268 * 120 -->
+        <img src="images/jianqiao/chen.jpg" alt="">
+        <a href="#ccp" class="left-arrow">&lt;</a>
+        <a href="#official" class="right-arrow">&gt;</a>
+        <p>建桥人物</p>
+    </li>
+    <li id="official">
+        <img src="images/jianqiao/official.jpg" alt="">
+        <a href="#chen" class="left-arrow">&lt;</a>
+        <a href="#office" class="right-arrow">&gt;</a>
+        <p>大学生村官</p>
+    </li>
+    <li id="office">
+        <img src="images/jianqiao/office.jpg" alt="">
+        <a href="#official" class="left-arrow">&lt;</a>
+        <a href="#ccp" class="right-arrow">&gt;</a>
+        <p>办公室</p>
+    </li>
+    <li id="ccp">
+        <img src="images/jianqiao/ccp.jpg" alt="">
+        <a href="#office" class="left-arrow">&lt;</a>
+        <a href="#chen" class="right-arrow">&gt;</a>
+        <p>党的召唤</p>
+    </li>
+   </ul> 
+   <ol>
+        <li><a href="#chen">1</a></li>
+        <li><a href="#official">2</a></li>
+        <li><a href="#office">3</a></li>
+        <li><a href="#ccp">4</a></li>
+   </ol>
+   </div>
+</body>
+</html>
