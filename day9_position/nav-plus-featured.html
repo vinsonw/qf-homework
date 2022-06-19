@@ -67,17 +67,23 @@
             height: 376px;
         }
 
-        .box {
+        .view {
             width: 1000px; height: 376px;
-            background-color: red;
             margin: 0 auto;
+            overflow: hidden;
 
+        }
+
+        .frame {
+            width: 1000px; height: 376px;
+            margin: 0 auto;
             position: relative;
         }
+
         img {
             width: 1000px; height: 376px;
         }
-        .featured .box a {
+        .featured .view a {
             text-decoration: none;
             /* display: block; */
             width: 30px;
@@ -90,7 +96,7 @@
             text-align: center;
             display: none;
         }
-        .box:hover a {
+        .view:hover a {
             display: block;
         }
         #left-arrow {
@@ -152,11 +158,43 @@
     </div> 
    </div>
     <div class="featured">
-        <div class="box">
-            <img src="images/lab.jpg" alt="">
-            <a href="#" id="left-arrow">&lt;</a>
-            <a href="#" id="right-arrow">&gt;</a>
-            <p>机电学院举办首届“集成电路产教融合基金”颁奖仪式</p>
+        <div class="view">
+            <div class="frame" id="f1">
+                <img src="images/welcome.jpg" alt="">
+                <a href="#f6" id="left-arrow">&lt;</a>
+                <a href="#f2" id="right-arrow">&gt;</a>
+                <p>123迎接美好新生活</p>
+            </div>
+            <div class="frame" id="f2">
+                <img src="images/lab.jpg" alt="">
+                <a href="#f1" id="left-arrow">&lt;</a>
+                <a href="#f3" id="right-arrow">&gt;</a>
+                <p>机电学院举办首届“集成电路产教融合基金”颁奖仪式</p>
+            </div>
+            <div class="frame" id="f3">
+                <img src="images/defense.jpg" alt="">
+                <a href="#f2" id="left-arrow">&lt;</a>
+                <a href="#f4" id="right-arrow">&gt;</a>
+                <p>上海保卫战</p>
+            </div>
+            <div class="frame" id="f4">
+                <img src="images/brochure.gif" alt="">
+                <a href="#f3" id="left-arrow">&lt;</a>
+                <a href="#f5" id="right-arrow">&gt;</a>
+                <p>欢迎报考上海建桥学院</p>
+            </div>
+            <div class="frame" id="f5">
+                <img src="images/worker.jpg" alt="">
+                <a href="#f4" id="left-arrow">&lt;</a>
+                <a href="#f6" id="right-arrow">&gt;</a>
+                <p>SJQU"最美劳动者"</p>
+            </div>
+            <div class="frame" id="f6">
+                <img src="images/campus.jpg" alt="">
+                <a href="#f5" id="left-arrow">&lt;</a>
+                <a href="#f1" id="right-arrow">&gt;</a>
+                <p>守护校园</p>
+            </div>
         </div> 
     </div>
 </body>
