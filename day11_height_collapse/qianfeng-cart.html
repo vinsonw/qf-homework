@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {padding: 0; margin: 0;}
+        .top {
+            background-color: #fafafa;
+            height: 32px;
+            border-bottom: 1px solid #eaeaea;
+        }
+        .main {
+            width:1190px; 
+            margin: 0 auto;
+        }
+
+        .top span {
+            float: left;
+            line-height: 32px;
+            font-size: 11px;
+            color: #aaaaaa;
+        }
+
+        .banner {
+             height: 108px;
+        }
+
+        .banner .main {
+            /*父元素设置了行高，img才能垂直居中*/
+            line-height: 108px; 
+
+        }
+
+        .banner .main img {
+            /*父元素设置了行高，img再设置middle才能垂直居中*/
+            vertical-align: middle;
+        }
+
+        .banner .main span {
+            font-size: 26px;
+            font-weight: normal;
+            color: #565656;
+            border-left: 2px solid #ddd;
+
+            padding-left: 25px;
+            margin-left: 28px;
+        }
+
+        .cart {
+            background-color: #f9f9f9;
+        }
+        
+        .cart h3 {
+            /*如果用margin-top，显示不正常 TODO */
+            padding-top: 30px;
+            margin-bottom: 15px;
+            font-size: 18px;
+            color: #f6572f;
+        }
+
+        table {
+            width: 1188px;
+            border: 1px solid #ececec;
+            border-top: 2px #f05424 solid;
+            
+            font-size: 12px;
+            background-color: #fff;
+            border-spacing: 0;
+        }
+
+        table input {
+            margin-right: 23px;
+            margin-left: 22px;
+        }
+
+        table tr {
+            text-align: left;
+        }
+
+        .th-row {
+            height: 38px;
+            line-height: 38px;
+            background-color: #f3f3f3;
+        }
+        .promotion-row {
+            height: 55px;
+            line-height: 55px;
+
+            background-color: #fff;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        .promotion-row span {
+            padding: 3px 6px;
+            background-color: #f6851b;
+            color: #fff;
+            margin-left: 20px;
+            margin-right: 12px;
+        }
+
+        .instructor1-row {
+            height: 133px;
+        }
+        .instructor2-row {
+            height: 126px;
+        }
+        .instructor3-row {
+            height: 126px;
+        }
+
+        .instructor img {
+            vertical-align: middle;
+            border: 1px solid #e8e8e8;
+            text-align: left;
+        }
+
+        .instructor span {
+            margin-left: 29px;
+        }
+
+        .ins-left {
+            float: left;
+            /* margin-top: 5px; */
+        }
+        .ins-right {
+            float: left;
+            width: 230px;
+            margin-left: 29px;
+
+            margin-top: 25px;
+        }
+
+        table a {
+            color: #858585;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- main: width 1190  -->
+    <!-- top height 32 border 1px -->
+    <!-- banner height 108 -->
+    <!-- heading  font-size 18px top 30 bottom 15 -->
+    <!-- table width 1188px -->
+    <!-- th height 38 border 1px -->
+    <!-- first row 55 border 1px -->
+    <!-- second row row 133 border 1px -->
+    <!-- third row row 126 border 1px -->
+    <!-- fourth row row 126 border 1px -->
+    <div class="top">
+        <div class="main">
+            <span>您好，某某，欢迎来到千锋商城</span>
+        </div>
+    </div>
+    <div class="banner">
+        <div class="main">
+            <img src="images/logo.jpg" alt="">
+            <span>购物车</span>
+        </div>
+    </div>
+    <div class="cart">
+        <div class="main">
+            <!-- 30 15 -->
+            <h3>全部商品 (3)</h3>
+            <table rules="rows">
+                <col width="230px">
+                <col width="220px">
+                <col width="100px">
+                <col width="100px">
+                <col width="100px">
+                <col width="100px">
+                <col width="100px" >
+                <col width="100px">
+                <tr class="th-row">
+                    <th><input type="checkbox">全选</th>
+                    <th>商品</th>
+                    <th>规格</th>
+                    <th>单价（元）</th>
+                    <th>优惠（元）</th>
+                    <th>数量</th>
+                    <th>小计（元）</th>
+                    <th>操作</th>
+                </tr>
+                <tr><td colspan="8" class="promotion-row"><span>满赠</span>活动商品满199元送千锋H5大前端图书一本</td></tr>
+                <tr class="instructor instructor1-row">
+                    <td colspan="2">
+                        <div class="ins-left">
+                            <input type="checkbox">
+                            <img src="images/instructor1.jpg" alt="">
+                        </div>
+                        <div class="ins-right">千锋HTML5大前端，H5程序员金牌讲师，陪您畅聊前端的那些事儿。</div>
+                    </td>
+                    <td>24小时</td>
+                    <td style="color: #666">298.00</td>
+                    <td><select style="color:#e63641; border-color: #f2d6cb;"><option value="促销优惠">促销优惠</option></select></td>
+                    <td>1</td>
+                    <td style="color:#f26b3e">298.00</td>
+                    <td><a href="#">删除</a></td>
+                </tr>
+                <tr class="instructor instructor2-row">
+                    <td colspan="2">
+                        <div class="ins-left">
+                            <input type="checkbox">
+                            <img src="images/instructor2.jpg" alt="">
+                        </div>
+                        <div class="ins-right">千锋HTML5大前端，H5程序员金牌讲师，陪您畅聊前端的那些事儿。</div>
+                    </td>
+                    <td>24小时</td>
+                    <td style="color: #666">298.00</td>
+                    <td><select style="color:#e63641; border-color: #f2d6cb;"><option value="促销优惠">促销优惠</option></select></td>
+                    <td>1</td>
+                    <td style="color:#f26b3e">298.00</td>
+                    <td><a href="#">删除</a></td>
+                </tr>
+                <tr class="instructor instructor3-row">
+                    <td colspan="2">
+                        <div class="ins-left">
+                            <input type="checkbox">
+                            <img src="images/instructor3.jpg" alt="">
+                        </div>
+                        <div class="ins-right">千锋HTML5大前端，H5程序员金牌讲师，陪您畅聊前端的那些事儿。</div>
+                    </td>
+                    <td>24小时</td>
+                    <td style="color: #666">298.00</td>
+                    <td><select style="color:#e63641; border-color: #f2d6cb;"><option value="促销优惠">促销优惠</option></select></td>
+                    <td>1</td>
+                    <td style="color:#f26b3e">298.00</td>
+                    <td><a href="#">删除</a></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

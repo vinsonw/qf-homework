@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0; margin: 0;
+        }
+        .parent {
+            width: 100%;
+            height: 100px;
+            background-color: lightblue;
+            /*如果不写min-width，parent的宽度是[浏览器窗口](注意，不是屏幕宽度)的宽度，当非全屏模式的时候，该宽度可能小于
+            1000px，造成child溢出，加上以后，当浏览器窗口低于1000px时，parent的宽度取值设置为1000px
+            */
+            min-width: 1000px;
+        }
+        .child {
+            width: 1000px;
+            height: 80px;
+            background-color: lightcoral;
+        }
+    </style>
+</head>
+<body>
+   <div class="parent">
+    <div class="child"></div>
+   </div> 
+</body>
+</html>
