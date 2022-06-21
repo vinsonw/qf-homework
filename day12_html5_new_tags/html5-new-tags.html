@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {padding: 0; margin: 0;}
+        body {
+            background-color: lightgrey;
+        }
+        #page {
+            width: 1000px;
+            margin: 0 auto;
+            border: 1px solid #fff;
+            line-height: 1.5;
+            font-family: "微软雅黑";
+        }
+        header.header {
+            width: 1000px; height: 80px;
+            background-color: rgb(255,128,64);
+        }
+        header h1 {
+            font-size: 72px;
+            line-height: 80px;
+            height: 80px;
+            color: #fff;
+            text-align: center;
+        }
+        section {
+            background-color: grey;
+            height: 450px;
+        }
+
+        .left {
+            width: 200px;
+            float: left;
+            color: #fff;
+            text-align: center;
+            padding-right: 20px;
+            padding-top: 20px;
+        }
+        .right {
+            width: 200px;
+            float: right;
+            color: #fff;
+            text-align: center;
+            padding-right: 20px;
+            padding-top: 20px;
+        }
+        .center {
+            float: left;
+            width: 500px;
+        }
+
+        .right p {
+            margin-top: 20px;
+        }
+
+        nav {
+            text-align: center;
+        }
+        nav a {
+            display: block;
+            color: rgb(255,128,64);
+            text-decoration: none;
+            height: 30px;
+            margin-left: 20px;
+            margin-top: 20px;
+            text-align: left;
+            border-bottom: 3px solid #fff;
+        }
+
+        header, footer {
+            background-color: rgb(255,128,64);
+            text-align: center;
+            color: #fff;
+        }
+
+        footer.footer {
+            clear: both;
+            height: 40px;
+            line-height: 40px;
+        }
+
+        article {
+            height: 190px; width: 500px;
+            background-color: #fff;
+            margin: 10px 0;
+            padding: 10px;
+            
+            position: relative;
+        }
+        article header, article footer{
+            height: 30px;
+            line-height: 30px;
+        }
+        article footer {
+            position: absolute;
+            display: block;
+            width: 500px;
+            bottom: 10px;
+            right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="page">
+        <header class="header">
+            <h1>Header</h1>
+        </header>
+        <section>
+            <aside class="left">
+                <nav>
+                    <h4>Nav</h4>
+                    <a href="#">link 1</a>
+                    <a href="#">link 2</a>
+                    <a href="#">link 3</a>
+                </nav>
+            </aside>
+            <aside class="right">
+                <h4>Aside</h4>
+                <p><em>"Lorem ipsum .......</em></p>
+            </aside>
+            <div class="center">
+            <article>
+                <header>Article Header</header>
+                <p>Lapp is a simple text editor for Chrome OS and Chrome. It's fast, lets you open multiple files at once, has syntax highlighting, and saves to ...orem ipsum</p>
+                <p>Per inceptos</p>
+                <footer>Article Footer</footer>
+            </article>
+            <article>
+                <header>Article Header</header>
+                <p>Lorem ipsum</p>
+                <footer>Article Footer</footer>
+            </article>
+        </div>
+        </section>
+        <footer class="footer">Footer</footer>
+    </div>
+</body>
+</html>

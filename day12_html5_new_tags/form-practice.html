@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {padding: 0; margin: 0;}
+        .main {
+            font-size: 12px;
+            width: 800px;
+            margin: 0 auto;
+            height: 500px;
+            background-image: url(images/bg.jpg);
+            background-repeat: repeat-x;
+        }
+        p.tip {
+            float: right;
+        }
+
+        fieldset {
+            padding-left: 20px;
+            border: 0;
+            border-top: 1px solid lightgray;
+            line-height: 1.5;
+        }
+
+        fieldset p {
+            /* padding-left: 25px; */
+            text-indent: 30px;
+        }
+        .fs1 {
+            height: 120px;
+            clear: right;
+            line-height: 2.0;
+        }
+        .fs2 {
+            font-weight: bold;
+
+        }
+        .fs3 {
+            height: 35px;
+        }
+        .fs3 input,.fs4 input {
+            margin-left: 30px;
+        }
+        .fs4 {
+            height: 35px;
+        }
+        .fs5 textarea {
+            resize: none;
+            margin-left: 30px;
+        }
+        .fs6 {
+            height: 40px;
+        }
+        input[type=submit] {
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+
+    </style>
+</head>
+<body>
+   <div class="box">
+    <div class="main">
+    <p class="tip">*号所在项为必填项</p>
+    <form action="" method="">
+
+     <fieldset class="fs1">
+        <legend>个人信息</legend>
+        <p>姓名 *<input type="text" name="" id=""></p>
+        <p>地址 *<input type="text" name="" id=""></p>
+        <p>
+        出生 *<select name="" id="day">
+                    <option value="1">1</option>
+                </select>
+                <select name="" id="month">
+                    <option value="Jan">Jan</option>
+                    <option value="Feb" selected>Feb</option>
+                </select>
+                <select name="" id="year">
+                    <option value="">1979</option>
+                </select>
+        </p>
+        <p>
+        性别 *<select name="" id="gender">
+                    <option value="">女</option>
+                    <option value="">男</option>
+                </select>
+        </p>
+     </fieldset>
+     <fieldset class="fs2">
+       <legend>其他信息</legend> 
+     </fieldset>
+     <fieldset class="fs3">
+       <legend>你喜欢这个表单吗？*</legend>
+       <input type="radio" name="iflike" id="like" checked><label for="like">喜欢</label> 
+       <input type="radio" name="iflike" id="dislike"><label for="dislike">不喜欢</label> 
+     </fieldset>
+     <fieldset class="fs4">
+       <legend>你喜欢什么运动？*</legend>
+       <input type="checkbox" name="sports" id="soccer"><label for="soccer">足球</label> 
+       <input type="checkbox" name="sports" id="basketball"><label for="basketball">篮球</label> 
+       <input type="checkbox" name="sports" id="baseball" checked><label for="baseball">棒球</label> 
+     </fieldset>
+     <fieldset class="fs5">
+        <legend>请写下你的建议？*</legend>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+     </fieldset>
+     <fieldset class="fs6">
+        <legend>请提交文件</legend>
+        <span>选择文件:</span> <input type="file" multiple>
+     </fieldset>
+     <input type="submit" value="提交个人信息">
+    </form>
+   </div> 
+   </div> 
+</body>
+</html>
