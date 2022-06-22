@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {padding: 0; margin: 0;}
+        #page {
+            width: 420px; 
+            padding: 13px;
+            margin: 2px auto;
+            background-color: rgb(156,188,43);
+            border-radius: 0.4rem;
+            text-align: center;
+            font-family: Georgia, 'Times New Roman', Times, serif 
+        }
+        #page p {
+            width: 380px; height: 38px;
+            line-height: 38px;
+            background-color: rgb(186,208,107);
+            border: 1px rgb(224, 234, 190) solid;
+            border-radius: 0.4rem;
+            margin: 2px auto;
+            font-size: 12px;
+
+            position: relative;
+        }
+        #page p span {
+            position: absolute;
+            left: 10px;
+        }
+        #page h2 {
+            width: 380px;
+            margin: 0px auto;
+            font-size: 14px;
+            text-align: left;
+            height: 24px;
+            line-height: 24px;
+        }
+        #page p.address {
+            height: 108px;
+            position: relative;
+        }
+        #page p.address textarea {
+           width: 200px;
+           position: absolute;
+           top: 10px; 
+           left: 99px;
+           border: 0;
+           border-radius: 0.1rem;
+           outline: none;
+           padding: 4px;
+           resize: none;
+        }
+        #page p.card-type {
+            height: 66px;
+            text-align: left;
+        }
+
+        #page input[type=radio] {
+            margin: 0 10px;
+            width: 45px;
+
+        }
+
+        input {
+            border: 0;
+            border-radius: 0.1rem;
+            padding: 4px;
+            outline: none;
+            font-family:inherit; 
+            width: 200px;
+
+            margin-left: 25px;
+        }
+        input::placeholder {
+            font-style: italic;
+            font-size: 11px;
+        }
+
+        input[type=submit] {
+            color: #fff;
+            background-color: rgb(55, 67, 19);
+            padding: 5px 20px;
+            border-radius: 1rem;
+            margin-top: 8px;
+            font-size: 16px;
+            /* 默认input/select/textarea不会显示的属性值不会继承字体 */
+            font-family:inherit; 
+        }
+    </style>
+</head>
+<body>
+    <!-- !what follows divied by 2 before use! -->
+    <!-- width 840px padding 26px -->
+    <!-- date item height 75 / 216 / 132  width 760-->
+    <!-- outer color 156,188,43  inner color 186,208,107 -->
+    <div id="page">
+        <form action="">
+        <h2>Step 1: Your details</h2>
+        <p><span>Name</span><input type="text" placeholder="First and last name" min="2" max="50"></p>
+        <p><span>Email</span><input type="email" placeholder="example@domain.com"></p>
+        <p><span>Phone</span><input type="tel" placeholder="Eg: +}447500000000"></p>
+
+        <h2>Step 2: Delivery address</h2>
+        <p class="address">
+            <span>Address</span>
+            <textarea name="" id="" cols="30" rows="5"></textarea>
+        </p>
+        <p><span>Post code</span><input type="text" placeholder=""></p>
+        <p><span>Country</span><input type="text"></p>
+
+        <h2>Step 3: Card details</h2>
+        <p class="card-type">
+            <span>Card type</span>
+            <br>
+            <input type="radio" name="credit-card-type" id="visa"><label for="visa">VISA</label>
+            <input type="radio" name="credit-card-type" id="amex"><label for="amex">AmEx</label>
+            <input type="radio" name="credit-card-type" id="mastercard"><label for="mastercard">Mastercard</label>
+        </p>
+        <p><span>Card number</span><input type="number"></p>
+        <p><span>Security code</span><input type="number"></p>
+        <p><span>Name on card</span><input type="text" placeholder="Exact name as on the card"></p>
+        <input type="submit" value="BUY IT!">
+        </form>
+    </div>
+</body>
+</html>
