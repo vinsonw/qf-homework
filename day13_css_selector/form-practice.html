@@ -7,7 +7,7 @@
     <title>Document</title>
     <style>
         * {padding: 0; margin: 0;}
-        #page {
+        .page {
             width: 420px; 
             padding: 13px;
             margin: 2px auto;
@@ -16,7 +16,7 @@
             text-align: center;
             font-family: Georgia, 'Times New Roman', Times, serif 
         }
-        #page p {
+        .page p {
             width: 380px; height: 38px;
             line-height: 38px;
             background-color: rgb(186,208,107);
@@ -27,11 +27,11 @@
 
             position: relative;
         }
-        #page p span {
+        .page p span {
             position: absolute;
             left: 10px;
         }
-        #page h2 {
+        .page h2 {
             width: 380px;
             margin: 0px auto;
             font-size: 14px;
@@ -39,11 +39,11 @@
             height: 24px;
             line-height: 24px;
         }
-        #page p.address {
+        .page p.address {
             height: 108px;
             position: relative;
         }
-        #page p.address textarea {
+        .page p.address textarea {
            width: 200px;
            position: absolute;
            top: 10px; 
@@ -54,12 +54,12 @@
            padding: 4px;
            resize: none;
         }
-        #page p.card-type {
+        .page p.card-type {
             height: 66px;
             text-align: left;
         }
 
-        #page input[type=radio] {
+        .page input[type=radio] {
             margin: 0 10px;
             width: 45px;
 
@@ -97,7 +97,7 @@
     <!-- width 840px padding 26px -->
     <!-- date item height 75 / 216 / 132  width 760-->
     <!-- outer color 156,188,43  inner color 186,208,107 -->
-    <div id="page">
+    <div class="page">
         <form action="">
         <h2>Step 1: Your details</h2>
         <p><span>Name</span><input type="text" placeholder="First and last name" min="2" max="50"></p>
