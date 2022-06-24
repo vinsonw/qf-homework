@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {padding: 0; margin: 0;}
+        ul, ol {
+            list-style: none;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+            display: block;
+        }
+        ul {
+            width: 186px;
+            margin: 20px auto;
+        }
+        ul>li {
+            float: left;
+            width: 60px;
+            height: 25px;
+            line-height: 25px;
+            border: dotted 1px black;
+            border-left: 0;
+            text-align: center;
+
+            position: relative;
+        }
+        ul>li:first-child {
+            border-left: dotted 1px black;
+        }
+
+        ol>li {
+            width: 60px;
+            height: 25px;
+            line-height: 25px;
+
+            border-top: 1px dotted black;
+
+        }
+        ol>li:first-child {
+            border-top: none;
+        }
+
+        ol {
+            position: absolute;
+            left: 0;
+            /* 对齐二级菜单的初始位置(26px = 一级li高度25px + 一级下边框1px) */
+            top: 26px;
+            height: 0px;
+            background-color: pink;
+            overflow: hidden;
+            transition: all .8s steps(4); 
+            /* transition-timing-function: steps(4); */
+
+        }
+        ul>li:hover ol{
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#">小红</a>
+            <ol>
+                <li><a href="#">小红</a></li>
+                <li><a href="#">小红</a></li>
+                <li><a href="#">小红</a></li>
+                <li><a href="#">小红</a></li>
+            </ol>
+        </li>
+        <li><a href="#">小强</a>
+            <ol>
+                <li><a href="#">小红</a></li>
+                <li><a href="#">小红</a></li>
+                <li><a href="#">小红</a></li>
+                <li><a href="#">小红</a></li>
+            </ol>
+        </li>
+        <li><a href="">小白</a>
+            <ol>
+                <li><a href="#">小红</a></li>
+                <li><a href="#">小红</a></li>
+                <li><a href="#">小红</a></li>
+                <li><a href="#">小红</a></li>
+            </ol>
+        </li>
+    </ul>
+</body>
+</html>

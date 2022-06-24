@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        ul{
+            border: 1px dashed #333;
+            width:1000px;
+            margin: 0 auto; 
+        }
+        ul li{
+            float:left;
+            width:100px; height:40px;
+            border-right: 1px dashed #333;
+            text-align: center;
+            line-height: 40px;
+        }
+        ul li a{
+            display: block;
+        }
+        .menu{
+            transition: all 2s linear;
+            height:0;
+            overflow: hidden;
+        }
+        ul li:hover .menu{
+           height:200px;
+        }
+        .menu>a{
+            background: pink;
+        }
+    </style>
+
+</head>
+<body>
+    <ul class="clear">
+        <li><a href="#">小强</a>
+            <div class="menu">
+                <a href="#">光头强</a>
+                <a href="#">大强</a>
+                <a href="#">苏大强</a>
+                <a href="#">苏小强</a>
+            </div>
+        </li>
+        <li><a href="#">小白</a>
+            <div class="menu">
+                <a href="#">光头强</a>
+                <a href="#">大强</a>
+                <a href="#">苏大强</a>
+                <a href="#">苏小强</a>
+            </div>
+        </li>
+        <li><a href="#">小黑</a></li>
+        <li><a href="#">小黄</a></li>
+        <li><a href="#">大黄</a></li>
+    </ul>
+</body>
+</html>

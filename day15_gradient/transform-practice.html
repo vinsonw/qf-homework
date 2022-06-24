@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {padding: 0; margin: 0;}
+
+        body {
+            background-color: black;
+        }
+
+        div {
+            width: 400px; height: 450px;
+            overflow: hidden;
+            position: relative;
+
+            border: 1px solid #fff;
+            margin: 0 auto;
+        }
+
+        img {
+            transition-duration: 0.5s;
+            transition-delay: 0.1s;
+            transition-timing-function: ease-out;
+        }
+
+        .portrait {
+            width: 200px; height: 300px;
+            position: absolute;
+            top: 5px;
+            left: 5px;
+        }
+
+        .square {
+            width: 100px; height: 100px;
+        }
+
+        .nyc1 {
+            position: absolute;
+            right: -120px;
+            top: 30px;
+        }
+
+        .nyc2 {
+            position: absolute;
+            left: -120px;
+            top: 180px;
+        }
+
+        .bottom {
+            width: 350px; height: 40px;
+            position: absolute;
+            bottom: -40px;
+            left: 25px;
+        }
+
+        .portrait:hover{
+            /* transform: scale(1.5); */
+            width: 240px; height: 360px;
+            /* 确保protrait图片在上，防止鼠标接触到其他图片，中断.portrait:hover事件，导致卡顿 */
+            z-index: 1;
+        }
+
+        .portrait:hover~.nyc1 {
+            transform: translate(-150px);  
+        }
+
+        .portrait:hover~.nyc2 {
+            transform: translate(390px);  
+        }
+        .portrait:hover~.bottom {
+            transform: translateY(-60px);
+        }
+    
+    </style>
+</head>
+<body>
+    <div>
+        <img src="images/mona_lisa.jpg" class="portrait" alt="">
+        <img src="images/nyc1.jpg" class="square nyc1" alt="">
+        <img src="images/nyc2.jpg" class="square nyc2"  alt="">
+        <img src="images/bottom_banner.png" class="bottom" alt="">
+    </div>
+</body>
+</html>
