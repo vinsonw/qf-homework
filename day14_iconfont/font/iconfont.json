@@ -1,0 +1,37 @@
+{
+  "id": "3480787",
+  "name": "sz2208",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "2790",
+      "name": "淘宝联盟",
+      "font_class": "taobaolianmeng",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "577367",
+      "name": "搜索类目",
+      "font_class": "sousuoleimu",
+      "unicode": "e754",
+      "unicode_decimal": 59220
+    },
+    {
+      "icon_id": "3904406",
+      "name": "八卦",
+      "font_class": "bagua",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    },
+    {
+      "icon_id": "12658996",
+      "name": "八卦",
+      "font_class": "bagua1",
+      "unicode": "e620",
+      "unicode_decimal": 58912
+    }
+  ]
+}

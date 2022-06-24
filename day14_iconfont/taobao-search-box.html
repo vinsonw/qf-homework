@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {padding: 0; margin: 0;
+            /* box-sizing: border-box; */
+        }
+        .search-box {
+            width: 740px; height: 36px;
+            line-height: 36px;
+            margin: 8px auto;
+            border: 2px solid rgb(225,80,0);
+            border-radius: 18px;
+            padding-left: 20px;
+
+            position: relative;
+        }
+        .search-box select {
+            width: 60px;
+            border: none;
+            outline: none;
+        }
+        .search-box input[type=text] {
+            border: none;
+            outline: none;
+            width: 670px; /*设置为680(=740-60)搜索框会被挤到第二行，不知道为什么*/
+        }
+        .search-box input[type=submit] {
+            width: 55px;
+            height: 34px;
+            border: none;
+            background: linear-gradient(to right,rgb(255,144,0), rgb(255,81,0));
+            color: #fff;
+            border-radius: 15px;
+            position: absolute;
+            right: 1px;
+            top: calc(50% - 17px);
+
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!-- 1482 * 72 -->
+    <!-- border-color: 225,80,0 -->
+    <div class="search-box">
+        <form action="">
+        <!-- 128 * 72 -->
+        <select name="" id="">
+            <option value="">宝贝</option>
+            <option value="">商家</option>
+        </select>
+        <input type="text" placeholder="零食">
+        <!-- 132 * 72 -->
+        <input type="submit" value="搜索">
+        </form>
+    </div>
+</body>
+</html>
