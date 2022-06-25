@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80px" height="40px" viewBox="0 0 80 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53 (72520) - https://sketchapp.com -->
+    <title>icon_arrow_authorize </title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="100%" y1="50%" x2="0%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#54ADF7" offset="0%"></stop>
+            <stop stop-color="#2A75ED" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="商家学院-帐号登录" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="首页/首页-管理台登录" transform="translate(-920.000000, -566.000000)" fill="url(#linearGradient-1)" fill-rule="nonzero">
+            <g id="登录弹窗" transform="translate(660.000000, 307.000000)">
+                <g id="Group-5" transform="translate(180.000000, 247.000000)">
+                    <g id="icon_arrow_authorize-" transform="translate(80.000000, 12.000000)">
+                        <polygon id="Line" points="0.833441398 10.6666667 0 10.6666667 0 5.33333333 0.833441398 5.33333333 64.9980548 5.33333333 64.9980548 0 80 8 64.9980548 16 64.9980548 10.6666667"></polygon>
+                        <polygon id="Line-Copy" transform="translate(40.000000, 32.000000) scale(-1, 1) translate(-40.000000, -32.000000) " points="0.833441398 34.6666667 0 34.6666667 0 29.3333333 0.833441398 29.3333333 64.9980548 29.3333333 64.9980548 24 80 32 64.9980548 40 64.9980548 34.6666667"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

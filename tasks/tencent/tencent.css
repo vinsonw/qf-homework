@@ -1,0 +1,418 @@
+body {
+    background-color: pink;
+}
+
+/* 屏幕右侧浮动菜单 */
+.float-menu {
+    width: 68px; height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    right: 30px;
+    top: 37%;
+    z-index: 1;
+}
+
+.float-menu>a {
+    display: block;
+    background-color: #fff;
+    width: 68px; height: 66px;
+    text-align: center;
+}
+
+.float-menu>a>img {
+    margin-top: 8px;
+    height: 26px; width: 26px;
+}
+
+.float-menu>a>p {
+    text-align: center;
+    font-size: 12px;
+}
+
+.float-menu .menu {
+    display: none;
+    position: absolute;
+    width: 176px;
+    height: 198px;
+    background-color: #fff;
+    margin-left: -200px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.float-menu .menu>img {
+    margin-top: 30px;
+    width: 120px;
+    height: 120px;
+}
+.float-menu .touch-to-pop:hover+.menu{
+    display: block;
+
+}
+/* 网页正文 */
+.nav {
+    width: 100%;
+    height: 72px;
+    background-color: #fff;
+    font-size: 14px;
+
+    display: flex;
+}
+
+.main {
+    width: 1200px;
+    margin: 0 auto;
+}
+.nav .main {
+    height: 72px;
+    line-height: 72px;
+    
+    display: flex;
+}
+
+.nav .logo-box {
+    width: 140px; height: 40px;
+    margin-right: 30px;
+    /* 为啥margin没有重叠？ */
+    margin-top: 16px;
+    margin-bottom: 16px;
+    background-image: url(img/small/logo.png);
+    background-repeat: no-repeat;
+}
+
+.nav .nav-menu {
+    display: flex;
+    justify-content: space-between;
+    /* Use the flex-grow property to make a flex item consume free space on the main axis. */
+    flex-grow: 1;
+}
+
+.nav .nav-menu-left li>a {
+   /* 让每个item左右之间有段距离不可点击 */
+   margin-right: 18px; 
+}
+
+.nav .nav-menu-left li:last-child>a {
+   /* 让每个item左右之间有段距离不可点击 */
+   margin-right: 0px; 
+}
+    
+.nav .nav-menu-left {
+    display: flex;
+}
+.nav .nav-menu-right {
+    display: flex;
+}
+
+.nav .nav-menu-right>li>a {
+    margin-left: 24px;
+}
+
+.nav .nav-menu-right>li:first-child>a {
+    margin-left: 0px;
+}
+
+.nav .nav-menu-right>li:last-child >a {
+   border: 1px rgb(16, 92, 251) solid; 
+   padding: 5px 22px;
+   border-radius: 4px;
+}
+.featured {
+    height: 488px;
+}
+.featured .main {
+     height: 448px;
+     position: relative;
+     margin-top: 24px;
+
+     font-size: 14px;
+     
+}
+
+.featured img {
+    width: 1200px; height: 448px;
+}
+
+.featured .sidebar {
+    position: absolute;
+    width: 240px;
+    height: 400px;
+    padding: 24px 0;
+    background-color: rgba(0, 0, 0, 0.55);
+    left: 0;
+    top: 0px;
+}
+
+.featured .sidebar>li>a {
+    color: #fff;
+    display: block;
+}
+
+.featured .sidebar>li>a:hover {
+    background-color: rgb(16, 92, 251);
+}
+
+.featured .sidebar>li>a {
+    height: 20px;
+}
+
+.featured .sidebar>li>a {
+    padding: 15px 24px;
+    line-height: 20px;
+}
+
+.featured .sidebar .second-menu {
+    position: absolute;
+    left: 240px;
+    top: 0;
+    /* height: 448px; */
+    /* 原网站二级菜单底部超出了左边sidebar区域约2px */
+    height: 452px;
+    /* width: 800px;  */
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 24px;
+    background-color: #fff; 
+    border: rgb(16, 92, 251) 2px solid ;
+    display: none;
+
+    box-sizing: border-box;
+
+}
+
+.featured .sidebar>li>a:hover+.second-menu {
+    /* flex-direction为column时，container的宽度不会随着内容宽度增长而增长，解决方案见: */
+    /* https://stackoverflow.com/questions/23408539/how-can-i-make-a-displayflex-container-expand-horizontally-with-its-wrapped-con */
+    display: inline-flex;
+    /* flex-direction: column; */
+    writing-mode: vertical-lr;
+    flex-wrap: wrap;
+}
+
+/* 接续上面的事件，防止鼠标向右离开sidebar时二级菜单消失 */
+.featured .sidebar .second-menu:hover{
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    writing-mode: vertical-lr;
+    flex-wrap: wrap;
+}
+
+.featured .sidebar .second-menu li {
+    margin-bottom: 32px;
+    margin-right: 20px;
+    height: 35px;
+    line-height: 35px;
+    writing-mode: horizontal-tb;
+    
+}
+
+.featured .sidebar .second-menu h4{
+    margin-bottom: 7px;
+    color: #353535;
+    font-size: 14px;
+    /* 覆盖继承的line-height */
+    line-height: 1em; 
+    font-weight: normal;
+}
+.featured .sidebar .second-menu p{
+    font-size: 12px;
+    height: 18px;
+    /* line-height: 18px; */
+    color: #888;
+}
+
+.live .main {
+    min-height: 380px;
+}
+.card {
+    display: block;
+
+    width: 227px;
+    height: 296px;
+    /* height: 396px; */
+    border-radius: 4px;
+    background: #fff;
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 1%), 0 6px 12px 0 rgb(0 0 0 / 6%);
+    /* margin: 0 16px 24px 0; */
+    margin: 0 13px 24px 0;
+    /* margin: 0 0 24px 13px; */
+    color: #353535;
+    overflow: hidden;
+    transition: transform .3s ease-in-out;
+
+    font-size: 14px;
+}
+
+.card:hover {
+    transform: translate(0, -8px);
+}
+
+.section-title-line {
+    display: flex;
+    justify-content: space-between;
+    line-height: 28px;
+    height: 28px;
+    margin-bottom: 32px;
+}
+
+.section-title-line .section-title {
+    font-size: 20px;
+    color: rgb(51, 51, 51);
+}
+
+.section-title-line .see-more {
+    font-size: 14px;
+    color: rgb(153, 153, 153);
+}
+
+.section-title-line .see-more:hover{
+    color:rgb(16,92,251);
+}
+
+.card  img {
+    width: 100%;
+    height: 170px;
+}
+
+.card-info {
+    padding: 8px 12px 0;
+}
+
+.card-info .card-info-title {
+    width: 203px;
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    white-space: nowrap; 
+}
+.card-info .card-info-text {
+    height: 18px;
+    width: 203px;
+    line-height: 18px;
+    margin-top: 2px;
+
+    font-size: 12px;
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    white-space: nowrap; 
+    color:rgb(153, 153, 153)
+}
+
+.card-info span {
+    font-size: 12px;
+    color: #888;
+}
+
+.card-info .item-tips {
+    margin: 8px 0 16px 0;
+}
+
+.card-info .live-tag {
+    background-color: rgb(232, 234, 237);
+    padding: 2px 5px;
+    border-radius: 2px;
+    height: 18px;
+    line-height: 18px;
+}
+
+.card-info .live-audience {
+    margin-left: 12px;
+}
+.card-info .price {
+    font-size: 16px;
+    height: 18px;
+    line-height: 18px;
+}
+
+.live-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1200px;
+}
+
+.footer {
+    background-color: #333234;
+    height: 170px;
+    font-size: 12px;
+    color: #888;
+    overflow: hidden;
+}
+
+.footer a {
+    color: #888;
+}
+
+
+.footer .copyright-info {
+    height: 87px;
+    text-align: center;
+}
+
+.footer .copyright-info ul {
+    color: #fff;
+    margin-top: 33px;
+    margin-bottom: 28px;
+
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.footer .copyright-info>ul>li {
+   padding: 0 32px; 
+   border-left: 1px #888 solid;
+}
+.footer .copyright-info>ul>li:first-child {
+    border-left: none;
+}
+
+.footer .copyright-info>ul>li>a:hover
+{
+    color: #fff;
+}
+
+.footer .copyright-info p {
+    height: 16px;
+    line-height: 16px;
+}
+
+.footer .copyright-info .IC::before {
+   /* https://stackoverflow.com/questions/8977957/can-i-change-the-height-of-an-image-in-css-before-after-pseudo-elements */
+    background-image: url(img/small/icon_business.png); 
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 20px; 
+    height: 20px;
+    content:"";
+    vertical-align: top;
+    padding-right: 10px;
+}
+.footer .copyright-info .beian::before {
+   content: url(img/small/beian.png); 
+   height: 20px;
+   width: 20px;
+   vertical-align: middle;
+   padding-right: 10px;
+}
+
+.footer .copyright-info p a {
+    margin-right: 30px;
+}
+
+.footer .copyright-info p span {
+    margin-right: 10px;
+}
+
+.footer .copyright-info p a:last-child {
+    text-decoration: underline;
+}
+
+.footer .tech-support {
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+
+    border-top: 1px #2d2c2e solid;
+}
