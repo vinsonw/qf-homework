@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            height: 40px;
+            background-color: lightblue;
+            /* 设置胶囊形状按钮的方法： */
+            /* 常规做法: radius置为height的一半 */
+            border-radius: 20px / 20px;
+            /* 非常规做法：the "999em hack" */
+            border-radius: 999em;
+
+        }
+    </style>
+</head>
+<body>
+    <button>Hello World!</button>
+</body>
+</html>
