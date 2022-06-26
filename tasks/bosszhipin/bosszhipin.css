@@ -200,6 +200,9 @@ body {
     /* display: flex; */
     padding-bottom: 36px;
     padding-top: 12px;
+}
+
+.row-card-wrapper:not(:last-child) {
     border-bottom: 1px #ededed solid;
 }
 .row-card {
