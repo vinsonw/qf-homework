@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 300px; height: 600px;
+            margin: 50px auto;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid black;
+            justify-content: space-around; 
+            align-items: center;
+        }
+        .box .item-wrapper {
+           position: relative;
+           /* 让transform:translate移出的veil不会遮挡wrapper以外的元素 */
+           overflow: hidden;
+        }
+        .box .item {
+            padding: 10px 10px;
+            height: 80px;
+            line-height: 80px;
+            color: #fff;
+            background-color: rgb(24,68,142);
+        }
+        .box .item-veil {
+            width: 100%; height: 100%;
+            position: absolute;
+            background-color: rgba(255, 255, 255, .5);
+            left: 0;
+            top: 0;
+            transition: all .3s;
+        }
+        .box .item-wrapper:hover .item-veil{
+            /* veil向上消失 */
+            /* height: 0; */
+            /* veil向下消失 */
+            transform: translateY(100px)
+        }
+
+        .box .object-wrapper {
+            position: relative;
+            /* 隐藏veil */
+            overflow: hidden;
+        }
+        .box .object {
+            writing-mode: vertical-lr;
+            width: 50px;
+            height: 80px;
+            padding: 8px;
+            color: #fff;
+            background-color: rgb(69,115,195);
+            border-radius: 3px;
+
+            /* 让文字水平垂直居中 */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .box .object-veil {
+            width: 100%; height: 100%;
+            box-sizing: border-box;
+            padding: 8px;
+            color: #fff;
+            background-color: rgb(24, 68, 142);
+            border-radius: 3px;
+
+            /* 让文字水平垂直居中 */
+            display: flex; 
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-weight: 500;
+
+            position: absolute;
+            top: 0;
+
+            transform-origin: -200% 40%;
+            transform: rotate(90deg);
+            transition: transform .5s;
+        }
+
+        .box .object-wrapper:hover .object-veil{
+            transform: none;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="item-wrapper">
+            <div class="item">美国宪法取消对女性堕胎权保护</div>
+            <div class="item-veil"></div>
+        </div>
+        <div class="object-wrapper">
+            <div class="object">网上有害<br>信息举报</div>
+            <div class="object-veil">举报</div>
+        </div>
+        <div class="object-wrapper">
+            <div class="object">一切都是<br>为了润</div>
+            <div class="object-veil">移民</div>
+        </div>
+
+    </div>
+</body>
+</html>

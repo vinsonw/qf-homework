@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+            /* boiler-plate */
+            .row-card {
+                height: 156px;
+                width: 1054px;
+                display: flex;
+                border-bottom: 1px #ededed solid;
+            }
+
+            .row-card:last-child {
+                border-bottom: none;
+                
+            }
+
+            .row-card-info {
+                display: flex;
+                flex-direction: column;
+                margin-left: 30px;
+            }
+            .row-card-info>.tips {
+                margin-top: auto;
+            }
+
+            .row-card-info>.tips>ul {
+                display: inline-block;
+                font-size: 13px;
+                color:#a0a0a0;
+            }
+            .row-card-info>.tips>ul>li { 
+                display: inline-block;
+            }
+
+            .row-card-info>h3 {
+                font-size: 18px;
+                font-weight: 500;
+                margin-bottom: 25px;
+            }
+            .row-card-info>h3>a:hover {
+                color: #53cac4;
+            }
+            .row-card-info>p {
+                font-size: 13px;
+                line-height: 25px;
+                color: #8d8d8d;
+            }
+
+            .row-card-info .source>.author {
+                font-size: 12px;
+                color: #53cac4;
+            }
+            .row-card-info .source>.author:after {
+                content: "·";
+                padding-left: 2px;
+            }
+
+            .row-card-info .tags::before {
+                content: url(img/tag.jpg);
+                margin-left: 45px;
+                margin-right: 10px;
+            }
+
+            a {
+                text-decoration: none;
+                color: #000;
+            }
+
+            /* practice */
+
+            .img-wrapper {
+                overflow: hidden;
+            }
+            img {
+                transition: transform 0.2s linear;
+            }
+            img:hover {
+                transform: scale(1.2);
+            }
+
+    </style>
+</head>
+<body>
+          <div class="row-card">
+            <div class="img-wrapper">
+            <img src="../tasks/bosszhipin/img/vr.jpg" alt="" />
+            </div>
+            <div class="row-card-info">
+              <h3><a href="#">除了身临其境的体验，VR购物还有那些玩法</a></h3>
+              <p>
+                它是一套企业管理软件，进销存其实从字面意思就很好理解，“进”是指进货入库和付款，“销”是指销售和收款，“存”是指库存。
+              </p>
+              <div class="tips">
+                <ul class="source">
+                  <li class="author">明月</li>
+                  <li class="timestamp">2小时前</li>
+                </ul>
+                <ul class="tags">
+                  <li>交通出行</li>
+                  <li>零售科技</li>
+                  <li>泡沫</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pacman</title>
+    <style>
+        body {
+            /* 防止Pacman在靠近窗口右边缘的时候出现横向滚动条 */
+            overflow: hidden;
+        }
+        .box {
+            width: 200px;
+            /* border: 1px solid black; */
+            position: relative;
+        }
+        .box>div {
+            width: 200px; height:200px;
+        }
+        .top {
+            background-image: linear-gradient(#888 0%, #888 50%, transparent 50%);
+            position: absolute;
+
+            border-radius: 100px;
+            transform: rotate(-25deg);
+        }
+        .bottom {
+            background-image: linear-gradient(transparent 0%, transparent 50%, #888 50%, #888 50%);
+            position: absolute;
+
+            border-radius: 100px;
+            transform: rotate(25deg);
+        }
+
+        .box>div {
+            /* look into later */
+            animation: eat .5s steps(2, jump-none) infinite;
+        }
+        .box {
+            animation: walk 5s linear infinite;
+
+        }
+
+        @keyframes eat {
+           0% { } 
+           100% {
+            transform: rotate(0deg);
+           }
+        }
+        @keyframes walk {
+           0% { left: 0;} 
+           100% {
+            left: 100%;
+           }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="top"></div>
+        <div class="bottom"></div>
+    </div>
+</body>
+</html>

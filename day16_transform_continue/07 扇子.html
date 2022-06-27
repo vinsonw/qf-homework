@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../day15/style.css">
+    <!-- 
+        分析：
+           2， 13个叶子，除了7，每个都旋转
+           1，每个叶子需要重叠（absolute fixed）
+           4， 透明 opacity 
+           3， 过渡      
+     -->
+     <style>
+        ul{
+            width:60px;
+            height:200px;
+            position: absolute;
+            left: 0;top:0;right:0;bottom:0;
+            margin: auto;       
+        }
+        ul li{
+            width:60px; height:200px;
+            background: red;
+            position: absolute;
+            border-radius: 6px;
+             transform-origin: center bottom;
+           box-shadow: 5px 5px 5px black;
+           transition: all 2s linear;
+        }
+        /* 否定伪类选择器 */
+        /* 不转的时候只有扇叶7能看到 */
+        ul>li:not(:nth-child(7)){
+           opacity: 0;
+        }
+        /* 转的时候所有扇叶都能看到 */
+        ul:hover>li{
+            opacity: 1;
+        }
+        /* 旋转 90 + - */
+        ul:hover li:nth-child(1){
+            background: #800080;
+            transform: rotate(90deg);
+        }
+        ul:hover li:nth-child(13){
+            background: #800080;
+            transform: rotate(-90deg);
+        }
+ /* 旋转 75 + - */
+        ul:hover li:nth-child(2){
+            background: #ffc0cb;
+            transform: rotate(75deg);
+        }
+        ul:hover li:nth-child(12){
+            background: #ffc0cb;
+            transform: rotate(-75deg);
+        }
+        ul:hover li:nth-child(3){
+            background: #ff1493;
+            transform: rotate(60deg);
+        }
+        ul:hover li:nth-child(11){
+            background: #ff1493;
+            transform: rotate(-60deg);
+        }
+        ul:hover li:nth-child(4){
+            background: #00bfff;
+            transform: rotate(45deg);
+        }
+        ul:hover li:nth-child(10){
+            background: #00bfff;
+            transform: rotate(-45deg);
+        }
+        ul:hover li:nth-child(5){
+            background: #008000;
+            transform: rotate(30deg);
+        }
+        ul:hover li:nth-child(9){
+            background: #008000;
+            transform: rotate(-30deg);
+        }
+        ul:hover li:nth-child(6){
+            background: #ffff00;
+            transform: rotate(15deg);
+        }
+        ul:hover li:nth-child(8){
+            background: #ffff00;
+            transform: rotate(-15deg);
+        }
+     </style>
+</head>
+<body>
+   <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+        <li>11</li>
+        <li>12</li>
+        <li>13</li>
+   </ul>
+</body>
+</html>

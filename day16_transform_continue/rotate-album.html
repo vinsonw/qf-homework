@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../tasks/common-style.css">
+    <title>Rotate Album</title>
+    <style>
+        html,body {
+            height: 100%;
+        }
+        body {
+            display: flex;
+        }
+        .box {
+            width: 1200px; height: 600px;
+            border: 1px solid black;
+            margin: auto;
+            display: flex;
+
+        }
+        .box ul {
+            margin: auto;
+            width: 200px; height: 120px;
+            position: relative;
+
+            transform-style: preserve-3d;
+            /* 便于观察 */
+            transform: rotateX(-45deg) rotateY(-45deg);
+            border: 4px solid black;
+            animation: rotate-ul 6s linear infinite;
+        }
+
+        /* To be continued */
+        /* .box ul>li {
+            animation: rotate-li 6s linear infinite;
+        } */
+        @keyframes rotate-ul {
+            0% {
+                transform: rotateX(0deg) rotateY(0deg);
+            }
+            25% {
+                transform: rotateX(-25deg) rotateY(-45deg);
+            }
+            50% {
+                transform:rotateX(0deg) rotateY(-90deg);
+            }
+            75% {
+                transform: rotateX(-25deg) rotateY(-180deg);
+            }
+            100%
+            {
+                transform: rotateX(0deg) rotateY(-360deg);
+            }
+
+        }
+        /* To be continued */
+        /* @keyframes rotate-li{
+            0% {
+                transform: none;
+            }
+            25% {
+            }
+        } */
+
+        .box ul>li {
+            position: absolute;
+        }
+        img {
+            /* 避免照片溢出li */
+            width: 100%;
+        }
+
+        li:nth-child(1) {
+            transform: translateZ(500px);
+        }
+        li:nth-child(2) {
+            transform: rotateY(40deg) translateZ(500px);
+        }
+        li:nth-child(3) {
+            transform: rotateY(80deg) translateZ(500px);
+        }
+        li:nth-child(4) {
+            transform: rotateY(120deg) translateZ(500px);
+        }
+        li:nth-child(5) {
+            transform: rotateY(160deg) translateZ(500px);
+        }
+        li:nth-child(6) {
+            transform: rotateY(200deg) translateZ(500px);
+        }
+        li:nth-child(7) {
+            transform: rotateY(240deg) translateZ(500px);
+        }
+        li:nth-child(8) {
+            transform: rotateY(280deg) translateZ(500px);
+        }
+        li:nth-child(9) {
+            transform: rotateY(320deg) translateZ(500px);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <ul>
+            <li><img src="rotate-album-img/aerial-view-of-residential-distratic-at-major-mackenzie-dr-and-ave-picture-id1320991884.jpg" alt=""></li>
+            <li><img src="rotate-album-img/barcelona-sunrise-at-the-street-picture-id1209682856.jpg" alt=""></li>
+            <li><img src="rotate-album-img/crowd-of-unrecognisable-people-crossing-street-on-traffic-light-zebra-picture-id1364054930.jpg" alt=""></li>
+            <li><img src="rotate-album-img/crowds-of-people-walking-through-a-busy-crosswalk-at-the-intersection-picture-id1279831403.jpg" alt=""></li>
+            <li><img src="rotate-album-img/empty-streets-in-tribeca-picture-id1333679755.jpg" alt=""></li>
+            <li><img src="rotate-album-img/entertainment-district-bars-downtown-austin-texas-usa-picture-id1354082462.jpg" alt=""></li>
+            <li><img src="rotate-album-img/happy-adult-man-walking-sunny-city-street-sidewalk-picture-id1310533208.jpg" alt=""></li>
+            <li><img src="rotate-album-img/homemade-mexican-street-corn-esquites-picture-id1396504185.jpg" alt=""></li>
+            <li><img src="rotate-album-img/london-view-of-empty-streets-and-alleys-during-lockdown-picture-id1290564153.jpg" alt=""></li>
+
+        </ul>
+    </div>
+</body>
+</html>

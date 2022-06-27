@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../day15/style.css">
+    <!-- 
+        分析
+            1，六个面（上下 左右 前后）
+            2, 重叠（绝对 固定）
+            3, 声明为3d
+     -->
+     <style>
+            ul{
+                width:200px; height:200px;
+                /* background: yellow; */
+                position: fixed;
+                left:50%;
+                top:50%;
+                margin: -100px 0 0 -100px;
+                transform-style: preserve-3d;
+                /* 目地是为了方便查看 */
+                transform: rotateX(15deg) rotateY(15deg);
+
+            }
+            ul li{
+                width:198px; height:198px;
+                background: rgba(255,0,0,0.5);
+                position: absolute;
+                border: solid 1px #333;
+            }
+            /* 前后 */
+            ul li:nth-of-type(1){
+                transform: translateZ(100px);
+            }
+            ul li:nth-of-type(2){
+                transform: translateZ(-100px);
+            }
+            /* 左右 */
+            ul li:nth-of-type(3){
+          
+                transform: translateX(100px) rotateY(90deg);
+                /* transform: rotateY(90deg) translateZ(100px); */
+            }
+            ul li:nth-of-type(4){
+                transform: translateX(-100px) rotateY(90deg);
+               
+            }
+            /* 上下 */
+            ul li:nth-of-type(5){
+          
+                transform: translateY(-100px) rotateX(90deg); 
+            }
+            ul li:nth-of-type(6){
+       
+                transform: translateY(100px) rotateX(90deg); 
+            }
+
+            /* 
+            鼠标划上 添加过渡让它旋转
+            */
+     </style>
+</head>
+<body>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+    </ul>
+</body>
+</html>
