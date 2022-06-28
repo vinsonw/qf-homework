@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../tasks/common-style.css">
+    <title>Document</title>
+    <style>
+        .wrapper ul {
+            width: 100%;
+            height: 40px;
+            display: flex;
+            overflow-x: scroll;
+            background-color: lightblue;
+            
+        }
+        .wrapper li {
+            width: 25%;
+            line-height: 40px;
+            /* 重点：让弹性项(flex item)不要自动收缩 */
+            flex-shrink: 0;
+            text-align: center;
+        }
+        /* 隐藏滚动条 */
+        ::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <ul>
+            <li>番剧</li>
+            <li>直播</li>
+            <li>旅行</li>
+            <li>新闻</li>
+            <li>漫画</li>
+            <li>音乐</li>
+            <li>舞蹈</li>
+            <li>文章</li>
+            <li>社区</li>
+            <li>摄影</li>
+        </ul>
+    </div>
+</body>
+</html>
