@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../common/style.css">
+    <title>Document</title>
+    <style>
+        header {
+            width: 100%; height: 250px;
+            background-image: url(images/featured.png);
+            background-size: cover;
+        }
+
+        nav {
+            height: 50px;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        nav {
+            padding: 0 20px;
+        }
+
+        nav>img {
+            height: 100%;
+        }
+
+        nav a {
+            color: #fff;
+        }
+        ul {
+            width: 450px;
+            display: flex;
+            justify-content: space-between;
+        
+        }
+        section {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+        }
+        section img {
+            padding-top: 20px;
+            display: block;
+            width: 23%;
+        }
+
+        .menu {
+            display: none;
+        }
+
+
+        @media screen and (max-width: 600px) {
+            nav>ul {
+                display: none;
+            }
+            .menu {
+                display: block;
+                order: -1;
+            }
+            section>img {
+                width: 48%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 363*287  -->
+    <!-- height 250px -->
+    <!-- height 50px -->
+    <header>
+        <nav>
+            <img src="images/logo.jpg" alt="">
+            <ul>
+                <li><a href="#">some</a></li>
+                <li><a href="#">some</a></li>
+                <li><a href="#">some</a></li>
+                <li><a href="#">some</a></li>
+                <li><a href="#">some</a></li>
+                <li><a href="#">some</a></li>
+            </ul>
+            <a href="#" class="menu">Menu</a>
+            <a href="#">登录</a>
+        </nav>
+    </header>
+    <section>
+        <img src="images/pic.jpg" alt="">
+        <img src="images/pic.jpg" alt="">
+        <img src="images/pic.jpg" alt="">
+        <img src="images/pic.jpg" alt="">
+        <img src="images/pic.jpg" alt="">
+        <img src="images/pic.jpg" alt="">
+        <img src="images/pic.jpg" alt="">
+    </section>
+</body>
+</html>

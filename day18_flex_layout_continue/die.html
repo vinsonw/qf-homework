@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../common/style.css">
+    <title>Six sides of a die</title>
+    <style>
+        .container {
+            margin: 0 auto;
+            width: 800px; height: 600px;
+            border: 1px solid black;
+
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+
+            align-items: center;
+            align-content: space-around;
+        }
+
+        .side {
+            width: 200px; height: 200px;
+            border: 8px solid rgb(187,187,187);
+            border-radius: 16px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .side-row {
+            width: 100%;
+
+            display: flex;
+            justify-content: space-around;
+        }
+        .side-row>li {
+            width: 50px; height: 50px;
+            border-radius: 25px;
+            background-color: transparent;
+        }
+
+
+        .side-1>.side-row:nth-child(2)>li:nth-child(2) {
+            background-color: black;
+            box-shadow: 0px -1px 2px 2px grey inset;
+        }
+
+        .side-2>.side-row:nth-child(1)>li:nth-child(3) {
+            background-color: black;
+            box-shadow: 0px -1px 2px 2px grey inset;
+        }
+        .side-2>.side-row:nth-child(3)>li:nth-child(1) {
+            background-color: black;
+            box-shadow: 0px -1px 2px 2px grey inset;
+        }
+
+        .side-3>.side-row:nth-child(1)>li:nth-child(3) {
+            background-color: black;
+            box-shadow: 0px -1px 2px 2px grey inset;
+        }
+        .side-3>.side-row:nth-child(3)>li:nth-child(1) {
+            background-color: black;
+            box-shadow: 0px -1px 2px 2px grey inset;
+        }
+        .side-3>.side-row:nth-child(2)>li:nth-child(2) {
+            background-color: black;
+            box-shadow: 0px -1px 2px 2px grey inset;
+        }
+
+        .side-4>.side-row:nth-child(1)>li:nth-child(3) {
+            background-color: black;
+            box-shadow: 0px -1px 2px 2px grey inset;
+        }
+        .side-4>.side-row:nth-child(3)>li:nth-child(1) {
+            background-color: black;
+            box-shadow: 0px -1px 2px 2px grey inset;
+        }
+        .side-4>.side-row:nth-child(1)>li:nth-child(1) {
+            background-color: black;
+            box-shadow: 0px -1px 2px 2px grey inset;
+        }
+        .side-4>.side-row:nth-child(3)>li:nth-child(3) {
+            background-color: black;
+            box-shadow: 0px -1px 2px 2px grey inset;
+        }
+
+        .side-5>.side-row:nth-child(1)>li:nth-child(3) {
+            background-color: black;
+            box-shadow: 0px -1px 2px 2px grey inset;
+        }
+        .side-5>.side-row:nth-child(3)>li:nth-child(1) {
+            background-color: black;
+            box-shadow: 0px -1px 2px 2px grey inset;
+        }
+        .side-5>.side-row:nth-child(1)>li:nth-child(1) {
+            background-color: black;
+            box-shadow: 0px -1px 2px 2px grey inset;
+        }
+        .side-5>.side-row:nth-child(3)>li:nth-child(3) {
+            background-color: black;
+            box-shadow: 0px -1px 2px 2px grey inset;
+        }
+        .side-5>.side-row:nth-child(2)>li:nth-child(2) {
+            background-color: black;
+            box-shadow: 0px -1px 2px 2px grey inset;
+        }
+
+        .side-6>.side-row:nth-child(1)>li:nth-child(3) {
+            background-color: black;
+            box-shadow: 0px -1px 2px 2px grey inset;
+        }
+        .side-6>.side-row:nth-child(3)>li:nth-child(1) {
+            background-color: black;
+            box-shadow: 0px -1px 2px 2px grey inset;
+        }
+        .side-6>.side-row:nth-child(1)>li:nth-child(1) {
+            background-color: black;
+            box-shadow: 0px -1px 2px 2px grey inset;
+        }
+        .side-6>.side-row:nth-child(3)>li:nth-child(3) {
+            background-color: black;
+            box-shadow: 0px -1px 2px 2px grey inset;
+        }
+        .side-6>.side-row:nth-child(2)>li:nth-child(1) {
+            background-color: black;
+            box-shadow: 0px -1px 2px 2px grey inset;
+        }
+        .side-6>.side-row:nth-child(2)>li:nth-child(3) {
+            background-color: black;
+            box-shadow: 0px -1px 2px 2px grey inset;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <ul class="container">
+        <li class="side side-1">
+            <ul class="side-row">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <ul class="side-row">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <ul class="side-row">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </li>
+        <li class="side side-2">
+            <ul class="side-row">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <ul class="side-row">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <ul class="side-row">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </li>
+        <li class="side side-3">
+            <ul class="side-row">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <ul class="side-row">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <ul class="side-row">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </li>
+        <li class="side side-4">
+            <ul class="side-row">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <ul class="side-row">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <ul class="side-row">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </li>
+        <li class="side side-5">
+            <ul class="side-row">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <ul class="side-row">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <ul class="side-row">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </li>
+        <li class="side side-6">
+            <ul class="side-row">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <ul class="side-row">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <ul class="side-row">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>
