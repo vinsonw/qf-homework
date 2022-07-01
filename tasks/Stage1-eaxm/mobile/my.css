@@ -1,0 +1,174 @@
+
+html {
+    font-size: 26.66vw;
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+header {
+    background-color: pink;
+
+    /* Todo 设置了oveflow hidden以后部分header消失，需要探究 */
+    /* overflow: hidden; */
+
+    box-sizing: border-box;
+    background-image: url(images/my/featured.jpg);
+    background-size: cover;
+}
+
+header .primary {
+    margin: 0 auto;
+    width: .65rem;
+    margin-top: .625rem;
+
+}
+
+header .primary a:last-child {
+    margin-top: 5px;
+}
+
+header .img-frame {
+    width: .65rem; height: .65rem;
+    border-radius: .325rem;
+    background-color: black;
+}
+
+header .img-frame {
+    background-image: url(images/my/avatar.png);
+    background-size: contain;
+    border: 2px solid #fff;
+}
+
+
+header a {
+    display: block;
+    font-size: .16rem;
+    text-align: center;
+    color: #fff;
+}
+
+header a img {
+    width:.05rem; height: .08rem;
+    padding-left: .025rem;
+}
+
+header ul  {
+    margin-top: .2rem;
+    margin-bottom: .25rem;
+    font-size: .15rem;
+    display: flex;
+    justify-content: space-around;
+    color: #fff;
+}
+
+header ul li {
+    width: 1.25rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-left: 1px solid #505050;
+}
+
+header ul li:first-child {
+    border-left: 0;
+}
+
+section {
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+section,footer {
+    font-size: .15rem;
+}
+section .nav {
+    box-sizing: border-box;
+    height: .7rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    border-bottom: 1px solid #e8e8e8;
+}
+section .nav li a {
+    font-size: .15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+section .nav li a img {
+    display: block;
+    width: .25rem; height: .25rem;
+    margin-bottom: .025rem;
+}
+
+section a img {
+    width: .065rem;
+    height: .13rem;
+}
+
+section div a {
+    display: flex;
+    height: .46rem;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: .2rem;
+    border-top: 1px solid #e8e8e8;
+
+}
+
+section .info {
+    padding-left: .155rem;
+    margin-top: .105rem;
+    border-top: 1px solid #e8e8e8;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+section .info>a:first-child {
+    border-top: 0;
+}
+
+section .info2>a:first-child>span:last-child span {
+    font-size: .13rem;
+    color: #999;
+    margin-right: .125rem;
+}
+
+section .info2>a:first-child>span:last-child  {
+    /* 有用 */
+    display: flex;
+    align-items: center;
+}
+
+
+
+footer ul {
+    height: .45rem;
+    border-top: 1px solid #e8e8e8;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer a {
+    font-size: .1rem;
+}
+
+footer a.active {
+    color: #fb5957;
+}
+
+footer ul img {
+    display: block;
+    width: .205rem; height:.205rem ;
+
+}

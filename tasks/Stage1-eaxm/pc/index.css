@@ -1,0 +1,453 @@
+
+.main {
+    /* width: 1710px; */
+    width: 91%;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: #1e1e1e;
+    color: #e7ebec;
+}
+
+.header .main {
+    height: 95px;
+}
+
+.header-left {
+    height: 100%;
+    /* line-height: 95px; */
+    float: left;
+}
+
+.header-left img {
+    float: left;
+    vertical-align: middle;
+}
+
+.header-left .slogan {
+
+    float: left;
+    height: 48px;
+    font-size: 13px;
+    line-height: 28px;
+    border-left: 1px solid #eaeaea;
+    
+    margin-top: 27px;
+    margin-left: 14px;
+    padding-left: 15px;
+    padding-top: 5px;
+    padding-bottom: 3px;
+}
+
+.header-right {
+    float: right;
+}
+
+.header-right .nav {
+    float: left;
+}
+
+.header-right .customer-service {
+    float: left;
+}
+
+.header-right .customer-service .hotline {
+    float: left;
+}
+.header-right .customer-service a {
+    display: block;
+    float: left;
+}
+
+.header-right ul {
+    margin-top: 36px;
+    margin-right: 31px;
+}
+.header-right ul li {
+    float: left;
+    margin-right: 44px;
+}
+
+.header-right ul li a {
+    color: #b9bbb8;
+    font-size: 17px;
+}
+
+.header-right ul li a.active {
+    color: #fefffb;
+    font-size: 17px;
+}
+
+.customer-service>a{
+    display: block;
+    margin-left: 35px;
+    margin-top: 22px;
+    text-align: center;
+}
+
+.customer-service>a>img{
+   width: 30px; height: 28px;
+}
+.customer-service>a>p{
+    color: #fff;
+    font-size: 13px;
+}
+
+.customer-service .hotline {
+    height: 40px;
+    border-right: 3px solid #bbbbbb;
+    overflow: hidden;
+    margin-top: 25px;
+}
+
+.hotline {
+    text-align: right;
+    padding-right: 20px;
+}
+
+.hotline>p:first-child {
+   font-size: 15px; 
+   line-height: 22px;
+}
+
+
+/* featured */
+
+.featured {
+    height: 782px;
+    background-color: pink;
+    background-image: url(images/kt-banner-04.jpg);
+    background-size: cover;
+    /* 交卷以后补充 --> 兼容高分屏（使图片的中心和版心的中心保持重叠） */
+    background-position: 50% 50%;
+}
+
+/* service */
+
+.service {
+    box-sizing: border-box;
+    height: 670px;
+    background-color: #fcfcfc;
+}
+
+.service h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.service p {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 80px;
+}
+
+.row-fifth .col {
+   float: left; 
+}
+
+.row-fifth .col img {
+    text-align: left;
+    width: 145px; height: 119px;
+}
+
+.row-fifth .col .img-frame {
+    width: 145px; height: 119px;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+.row-fifth .col .frame1 {
+    background-image: url(images/service1.gif);
+}
+
+.row-fifth .col .frame2 {
+    background-image: url(images/service2.gif);
+}
+
+.row-fifth .col .frame3 {
+    background-image: url(images/service3.gif);
+}
+.row-fifth .col .frame4 {
+    background-image: url(images/service4.gif);
+}
+.row-fifth .col .frame5 {
+    background-image: url(images/service5.gif);
+}
+.row-fifth .col h2 {
+    text-align: left;
+    margin-top: 30px;
+    margin-bottom: 13px;
+}
+
+
+.row-fifth .col p {
+    width: 126px;
+    /* margin: 0 auto; */
+    text-align: left;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.row-fifth .col-top {
+    height: 234px;
+    margin-bottom: 35px;
+}
+
+
+.row-fifth ul {
+    text-align: left;
+    font-size: 13px;
+    color: #666;
+}
+
+
+.row-fifth {
+    width: 1115px;
+    margin: 0 auto;
+}
+
+.row-fifth > * {
+    width: 20%;
+}
+
+.case {
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+.case .main>h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.case .main>p {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+/* 570*320 */
+
+.case .row > * {
+    display: block;
+    width: 33.333%;
+    margin-bottom: 95px;
+}
+
+/* .case .row {
+    won't work
+    margin-bottom: 95px;
+} */
+
+.case .row >a {
+    display: block;
+}
+
+
+.case .row .col .img-frame{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 320px;
+}
+
+.case .row .col {
+    float: left;
+}
+.case .row .col .frame1{
+    background-image: url(images/case1.jpg);
+}
+.case .row .col h3{
+    font-size: 18px;
+    margin-top: 18px;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.case .row .col p{
+    font-size: 12px;
+    color: #666;
+    border-left: 2px #666 solid;
+    padding-left: 6px;
+}
+
+/* 划上放大效果 */
+.case .row .col .img-frame {
+    overflow: hidden;
+}
+
+.case .row .col .img-frame>img {
+    transition: all .3s;
+    /* 堵上间隙 */
+    transform: scale(1.01);
+}
+
+.case .row .col .img-frame:hover>img {
+   transform: scale(1.21); 
+}
+
+.client  {
+    height: 970px;
+}
+
+.client h2 {
+   text-align: center; 
+}
+
+.client h2:after {
+    content: "";
+    display: block;
+    width: 50px;
+    margin: 0 auto;
+    border-bottom: 3px solid #2095f2; 
+    margin-top: 21px;
+    margin-bottom: 80px;
+}
+
+.client .brand-row {
+    width: 1222px;
+    margin: 0 auto;
+} 
+.client .brand-row > * {
+    width: 20%;
+}
+
+.client .brand-row .brand-col {
+    float: left;
+}
+
+.client .img-frame {
+    width: 227px; height: 150px;
+    background-repeat: no-repeat;
+    background-position: 0 -150px;
+    transition: all 0.3s;
+}
+
+.client .img-frame:hover {
+    background-position: 0 0px;
+}
+
+.client .f1 {
+    background-image: url(images/anli1.png);
+}
+.client .f3 {
+    background-image: url(images/anli2.png);
+}
+.client .f2 {
+    background-image: url(images/anli6.png);
+}
+.client .f4 {
+    background-image: url(images/anli8.png);
+}
+.client .f5 {
+    background-image: url(images/anli9.png);
+}
+.client .f6 {
+    background-image: url(images/anli18.png);
+}
+.client .f7 {
+    background-image: url(images/anli2.png);
+}
+.client .f8 {
+    background-image: url(images/anli6.png);
+}
+.client .f9 {
+    background-image: url(images/anli8.png);
+}
+.client .f10 {
+    background-image: url(images/anli9.png);
+}
+
+.footer {
+    height: 294px;
+    background-image: url(images/footer-bg_02.jpg);
+    background-size: cover;
+    /* 保持在上，防止受到上方图片滑动时覆盖 */
+    position: relative;
+
+    font-size: 14px;
+    color: #c8c8ca;
+    overflow: hidden;
+}
+
+.footer a {
+    color: #c8c8ca;
+}
+
+.footer-main {
+    width: 1222px;
+    margin: 0 auto;
+} 
+
+.footer .col1 {
+    float: left;
+}
+.footer .col2 {
+    float: left;
+}
+.footer .col3 {
+    float: right;
+}
+
+.footer .about {
+    float: left;
+}
+
+.footer .social {
+    float: right;
+}
+
+.footer .top-row {
+    height: 168px;
+    margin-top: 60px;
+    border-bottom: 1px solid #4d4d4d;
+}
+
+.footer .top-row .col1 {
+    margin-right: 60px;
+}
+
+.footer .top-row ul {
+    float: left;
+    margin-top: 30px;
+    margin-right: 55px;
+    line-height: 30px;
+
+}
+
+.footer .top-row ul a  {
+   color: #fff; 
+}
+.footer h3 {
+    font-size: 20px;
+}
+
+.footer .top-row .col3  {
+    text-align: right;
+    line-height: 30px;
+}
+
+.footer .top-row .col3>p:nth-child(2)  {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.footer .tel {
+    font-size: 28px;
+    color: #2095f4;
+}
+
+.footer .bottom-row {
+    line-height: 60px;
+}
+
+.footer .social a {
+    margin-left: 25px;
+    display: inline-block;
+    margin-top: 10px;
+}
