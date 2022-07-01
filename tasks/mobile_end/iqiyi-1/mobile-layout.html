@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- This one is for iPhone6 Plus -->
+    <link rel="stylesheet" href="../common/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../common/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iqiyi</title>
+    <style>
+       * {
+        padding: 0;
+        margin: 0;
+       } 
+        html {
+            font-size: 24.15vw;
+        }
+        header {
+            height: .4333rem;
+            background-image: linear-gradient(to right, #1a2e4a, #3f978f);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+
+        header img {
+            /* 避免受到行高影响 */
+            display: block;
+
+            height: .25rem;
+            margin-left: .05rem;
+        }
+
+        header form {
+            width: 3rem; height: .2867rem;
+            display: flex;
+
+            background-color: transparent;
+            background-image: linear-gradient(to right, #1b374f, #307b7d);
+            border-radius: .1433rem;
+
+            display: flex;
+        }
+
+        header form input {
+            background-color: transparent;
+            border: none;
+            flex-grow: 1;
+            outline: none;
+        }
+        
+        header form button  {
+            color: #0eb04b;
+            width: .2867rem; height: .2867rem;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+        }
+
+        header a:last-child {
+            color: #0eb04b;
+            font-size: .0833rem;
+            margin-right: .1833rem;
+        }
+
+        .fa-search {
+            font-size: .18rem;
+            margin-right: .0667rem;
+            margin-bottom: .0333rem;
+        }
+        .fa-user {
+            font-size: .2rem;
+        }
+
+        .featured {
+            margin-top: .4333rem;
+            height: 2.3333rem;
+            background-image: url(images/featured.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        nav {
+            height: .9rem;
+            /* line-height: 18px; */
+        }
+        nav img {
+           display: block;
+           width: .4067rem; 
+           /* margin: 0 auto; */
+        }
+
+        nav>ul>li>a>span {
+            display: block;
+            font-size: .12rem;
+            text-align: center;
+        }
+
+        nav>ul>li>a{
+            display: block;
+        }
+
+        nav>ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            overflow: scroll;
+
+            box-sizing: border-box;
+            padding: .12rem .1933rem;
+        }
+        nav>ul>li {
+            width: .4333rem;
+            width: 20%;
+            /* background-color: pink; */
+            flex-shrink: 0;
+
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        ::-webkit-scrollbar {
+            display: none;
+        }
+
+        section img {
+            width: 1.9rem; height: 1.0667rem;
+            border-radius: .01rem;
+            margin-bottom: .0667rem;
+        }
+
+        section {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            align-content: space-between;
+
+            padding-bottom: 50px;
+        }
+        footer {
+            width: 3.7533rem; height: .3667rem;
+            line-height: .3667rem;
+            background-color: #00c853;
+            border-radius: 4px;
+            position: fixed;
+            left: 0;
+            right: 0;
+            margin: 0 auto; 
+            bottom: .2133rem;
+            font-size: .15rem;
+            text-align: center;
+
+            animation: _scale .5s  infinite alternate;
+        }
+        footer a {
+            color: #fff;
+        }
+        footer img {
+            height: 40%;
+            vertical-align: middle;
+            margin: .0167rem;
+        }
+
+        footer span {
+            vertical-align: middle;
+        }
+
+        @keyframes _scale {
+           to {
+            transform: scale(1.05);
+           } 
+        }
+    </style>
+</head>
+<body>
+    <div class="header-wrapper">
+    <header>
+        <a href="#"><img src="images/logo.jpg" alt=""></a>
+        <form action=""><input type="text"><button><i class="fa fa-search fa-1x"></i></button></form>
+        <a href="#"><i class="fa fa-user fa-1x"></i></a> 
+    </header>
+    </div>
+    <div class="featured"></div>
+    <nav>
+        <ul>
+            <li><a href="#"><img src="images/i1.jpg" alt=""><span>VIP会员</span></a></li>
+            <li><a href="#"><img src="images/i2.jpg" alt=""><span>综艺</span></a></li>
+            <li><a href="#"><img src="images/i3.jpg" alt=""><span>1</span></a></li>
+            <li><a href="#"><img src="images/i4.jpg" alt=""><span>2</span></a></li>
+            <li><a href="#"><img src="images/i5.jpg" alt=""><span>3</span></a></li>
+            <li><a href="#"><img src="images/i5.jpg" alt=""><span>4</span></a></li>
+            <li><a href="#"><img src="images/i5.jpg" alt=""><span>5</span></a></li>
+        </ul>
+    </nav>
+    <section>
+        <a href="#"><img src="images/content.jpg" alt=""></a>
+        <a href="#"><img src="images/content.jpg" alt=""></a>
+        <a href="#"><img src="images/content.jpg" alt=""></a>
+        <a href="#"><img src="images/content.jpg" alt=""></a>
+        <a href="#"><img src="images/content.jpg" alt=""></a>
+        <a href="#"><img src="images/content.jpg" alt=""></a>
+        <a href="#"><img src="images/content.jpg" alt=""></a>
+        <a href="#"><img src="images/content.jpg" alt=""></a>
+        <a href="#"><img src="images/content.jpg" alt=""></a>
+        <a href="#"><img src="images/content.jpg" alt=""></a>
+        <a href="#"><img src="images/content.jpg" alt=""></a>
+        <a href="#"><img src="images/content.jpg" alt=""></a>
+        <a href="#"><img src="images/content.jpg" alt=""></a>
+        <a href="#"><img src="images/content.jpg" alt=""></a>
+        <a href="#"><img src="images/content.jpg" alt=""></a>
+    </section>  
+    <!-- 1126*110 -->
+    <footer><a href="#"><img src="images/iqiyi.jpg" alt=""><span>打开爱奇艺APP，看精彩视频</span></a></footer>
+</body>
+</html>
