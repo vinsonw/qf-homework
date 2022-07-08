@@ -74,15 +74,14 @@ function ifLeapYear() {
 function showWeekday() {
     let day = prompt('请输入数字（假设本月1号为周一）');
     validateNumber(day);
-    if (day > 31) {
+    // 小数未校验
+    if (day > 31 || day < 1) {
         alert('无效输入');
         exit;
     }
     let weekday = day % 7;
-    if (weekday == 0)
-        alert(day + ' 号是星期日');
-    else
-        alert(day + ' 号是星期' + weekday);
+    let weekdays = ['日','一','二','三','四','五','六']
+    alert(day + ' 号是星期'+ weekdays[weekday]);
 }
 
 // 7
@@ -121,6 +120,8 @@ function showGradeS() {
             alert('良');
             break;
         case 9:
+        // 100分漏掉了
+        case 10:
             alert('优');
             break;
         default:
@@ -211,7 +212,7 @@ function showDayOfYear() {
         // console.log(yearToDate);
     }
 
-    yearToDate += Number(day);
+    yearToDate += day;
 
     // 校验平年输入2/29的情况
     // if (!isLeapYear && month == '02' && day == '29') {
