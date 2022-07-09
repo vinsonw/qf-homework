@@ -208,6 +208,23 @@ document.write('// 20 (手工解方程) ')
 document.write('被除数==115，除数==35')
 document.write('<br>');
 
+function searchNumers(quotient, remainder) {
+    // numerator 被除数 denominator 除数 quotient 商 remainder 余数
+    let denominator = remainder + 1;
+    let numerator = remainder + quotient * denominator
+
+    while (numerator+denominator+quotient+remainder != 163) {
+        denominator += 1;
+        numerator = remainder + quotient * denominator
+    }
+
+    document.write(`除数是${denominator}，被除数是${numerator}`);
+}
+
+document.write('// 20 (暴力解法:) ')
+document.write('<br>');
+searchNumers(3, 10);
+
 // 21
 
 function theMonkeyProblem(bananaNum, givenDistance) {
@@ -215,22 +232,24 @@ function theMonkeyProblem(bananaNum, givenDistance) {
     let currentBanana = bananaNum;
 
     let cntDirction = 0;
-    let distance = 0;
+    let oneWayDistance = 0;
     while (currentBanana > 0) {
 
         // 如果在一根香蕉还没吃完的时候到达
         // home，会出现负距离，即另一个方向
         // 的行程，需要从下次行程中减去
         // 这部分已经走的距离
-        distance += givenDistance;
-        while (distance > 0) {
+        oneWayDistance += givenDistance;
+        while (oneWayDistance > 0) {
             eatenBanana++;
-            distance -= 6;
+            oneWayDistance -= 6;
         }
+
+        // 只有to home方向的单趟行程可以导致banana-50
         if (cntDirction % 2 == 0) {
             currentBanana -= 50;
             // 以下语句开始放错了，
-            // 导致猴子永远都是返程，currentBana的数量维持
+            // 导致猴子永远都是返程，currentBanana的数量维持
             // 50不变，导致死循环
             // cntDirction++;
         }
