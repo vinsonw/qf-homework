@@ -460,3 +460,66 @@
 
 // video.showTags();
 
+// Exercise 01 sum of arguments
+// function sum(...args) {
+//     // if (Array.isArray(args[0]))
+//     //     return args[0].reduce((a,c) => a+c);
+
+//     // Mosh's version:
+//     if (args.length === 1 && Array.isArray(args[0]))
+//         args = [...args[0]];
+//     return args.reduce((a,c) => a+c);
+// }
+
+// console.log(sum(1, 2, 3, 4));
+// console.log(sum([1, 2, 3, 4]));
+
+// Exercise 02 - Areas of Circle
+
+// const circle = {
+//     radius: 2,
+//     get area() {
+//         return Math.PI*this.radius**2;
+//     },
+//     // 如果不设置setter, 对area赋值不会出错，但是会无效
+//     // circle.area返回的依然是get area()返回的值
+//     set area(value) {
+//         throw new Error('不能设置圆的面积!');
+//     }
+// };
+
+// console.log(circle.area);
+// // 返回Uncaught Error: 不能设置圆的面积!
+// circle.area = 30;
+// circle.radius = 3;
+// console.log(circle.area);
+
+
+// Exercise 3 Error Handling
+// 给下面的函数加上错误处理
+
+// const numbers = [1, 2, 3, 4, 1, 2, 2];
+// const count = countOccurrences(numbers, 2);
+// console.log(count);
+
+// function countOccurrences(array, searchElement) {
+//     return array.reduce((a, c) => c === searchElement ? a+1: a, 0);
+// }
+
+// 上面的函数假设第一个参数是array，需要错误处理
+const numbers = [1, 2, 3, 4, 1, 2, 2];
+try {
+    const count = countOccurrences(null, 4);
+    console.log(count);
+} catch (e) {
+    // console.log(e);
+    // Mosh's version(Error对象有一个message属性，其值为之前传入的错误信息)
+    console.log(e.message);
+}
+
+
+function countOccurrences(array, searchElement) {
+    if (!Array.isArray(array))
+        throw new Error(`${array} is not an array.`);
+    return array.reduce((a, c) => c === searchElement ? a+1: a, 0);
+}
