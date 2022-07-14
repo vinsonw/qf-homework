@@ -231,10 +231,13 @@ function showDayOfYear() {
 function showDetailedTime() {
     let totalSec = 7896709887;
     let daySec = 24 * 60 * 60;
+    let hourSec = 60 * 60;
+    let minuteSec = 60;
+    // 应该用连续取余最简洁
     let day = parseInt(totalSec / daySec);
-    let hour = parseInt((totalSec - day * daySec) / 3600);
-    let minute = parseInt((totalSec - day * daySec - hour * 3600) / 60);
-    let sec =  totalSec - day * daySec - hour * 3600 - minute * 60;
+    let hour = parseInt(totalSec % daySec / hourSec);
+    let minute = parseInt(totalSec % daySec % hourSec / minuteSec);
+    let sec = totalSec % daySec % hourSec % minuteSec 
 
     alert(totalSec + '秒是' + day + '天' + hour + '小时' + minute + '分钟' + sec + '秒');
 }
